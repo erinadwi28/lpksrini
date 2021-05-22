@@ -255,13 +255,13 @@ h3 {
 .overlay2::before {
   position: absolute;
   content: "";
-  background-color: #2E004B;
+ background: linear-gradient(#FFC100 , #DE261F);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 1;
 }
 
 /* line 172, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_reset.scss */
@@ -1439,7 +1439,7 @@ h3 {
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_about.scss */
 .about_area {
-  padding: 200px 0 270px 0;
+  padding: 100px 0 50px 0;
 }
 
 @media (max-width: 767px) {
@@ -2666,7 +2666,11 @@ label{
 
 /* line 44, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_faq.scss */
 .courses_details_info #accordion .card .card-body {
-  padding: 0 0 40px 76px;
+  padding: 0 40px 40px 76px;
+}
+
+.courses_details_info #accordion .card .card-body {
+  text-align: justify;
 }
 
 @media (max-width: 767px) {
@@ -2737,7 +2741,7 @@ label{
   padding-top: 100px;
   padding-bottom: 170px;
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #fff), to(#F5F4F0)); */
-  background: linear-gradient(#fff 50%, #F5F4F0 100%);
+  background: linear-gradient(#fff, #F5F4F0 40%);
 }
 
 @media (max-width: 767px) {
@@ -2866,8 +2870,9 @@ label{
 
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_team.scss */
 .our_team_member {
-  padding-top: 134px;
+  padding-top: 0px;
   padding-bottom: 130px;
+  background: linear-gradient(#fff , #F5F4F0 40%);
 }
 
 @media (max-width: 767px) {
@@ -2921,7 +2926,7 @@ label{
   width: 100%;
   height: 100%;
   content: "";
-  background-image: url(../img/team/overlay.png);
+  background-image: url(../../images/landing/struktur/overlay.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -3237,8 +3242,8 @@ label{
 
 /* line 75, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
 .courses_details_info {
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 0px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 767px) {

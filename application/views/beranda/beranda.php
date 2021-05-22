@@ -16,13 +16,7 @@
 							<nav>
 								<ul id="navigation">
 									<li><a class="active" href="<?= base_url('beranda') ?>">Beranda</a></li>
-									<li><a href="#">Profil <i class="ti-angle-down"></i></a>
-										<ul class="submenu">
-											<li><a href="<?= base_url('profil') ?>">Sejarah</a></li>
-											<li><a href="<?= base_url('profil') ?>">Visi & Misi</a></li>
-											<li><a href="<?= base_url('profil') ?>">Struktur</a></li>
-										</ul>
-									</li>
+									<li><a href="<?= base_url('profil') ?>">Profil</a></li>
 									<li><a href="#">Program <i class="ti-angle-down"></i></a>
 										<ul class="submenu">
 											<li><a href="">Pelatihan <i class="ti-angle-down"></i></a>
