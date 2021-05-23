@@ -74,7 +74,7 @@
 		<div class="row">
 			<div class="col-xl-5 col-lg-6">
 				<div class="single_about_info">
-					<h3>Mengenal LKPS Rini <br>
+					<h3>Mengenal LPKS Rini <br>
 						lebih jauh Yuk !</h3>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem illum molestiae
 						temporibus obcaecati ad quisquam, fuga alias debitis doloribus vel excepturi tempore nisi
