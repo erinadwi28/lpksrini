@@ -17,15 +17,15 @@
 /* line 22, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_extend.scss */
 .header-area .main-header-area.sticky {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a64eee+0,3c35ce+100 */
-  background: #a64eee;
+  background: #FFC100;
   /* Old browsers */
-  background: -moz-linear-gradient(left, #FFC100 0%, #DE261F 100%);
+  /* background: -moz-linear-gradient(left, #FFC100 0%, #DE261F 100%); */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #FFC100 0%, #DE261F 100%);
+  /* background: -webkit-linear-gradient(left, #FFC100 0%, #DE261F 100%); */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #FFC100 0%, #DE261F 100%);
+  /* background: linear-gradient(to right, #FFC100 0%, #DE261F 100%); */
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a64eee', endColorstr='#3c35ce', GradientType=1);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a64eee', endColorstr='#3c35ce', GradientType=1); */
   /* IE6-9 */
 }
 
@@ -2755,9 +2755,8 @@ label{
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_coures.scss */
 .our_courses {
   padding-top: 100px;
-  padding-bottom: 170px;
+  padding-bottom: 50px;
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #fff), to(#F5F4F0)); */
-  background: linear-gradient(#fff, #F5F4F0 40%);
 }
 
 @media (max-width: 767px) {
@@ -2887,8 +2886,7 @@ label{
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_team.scss */
 .our_team_member {
   padding-top: 0px;
-  padding-bottom: 130px;
-  background: linear-gradient(#fff , #F5F4F0 40%);
+  padding-bottom: 50px;
 }
 
 @media (max-width: 767px) {
@@ -2923,7 +2921,8 @@ label{
 
 /* line 18, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_team.scss */
 .our_team_member .single_team .thumb img {
-  width: 100%;
+  width: 255px;
+  height: 320px;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -6975,4 +6974,27 @@ h6 {
   font-size: 12px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Partner */
+.partner {
+    background: linear-gradient(#fff, #F5F4F0 40%);
+
+}
+
+.partner .partner_title {
+  margin-bottom: 50px;
+}
+
+.partner .partner_item {
+  margin-bottom: 50px;
+}
+
+/* Struktur */
+.pembimbing {
+    background: linear-gradient(#fff , #F5F4F0 40%);
+}
+
+/* sertifikat lembaga */
+.sertifikat_lembaga {
+  width: 400px !important;
+  height: 200px !important;
+}

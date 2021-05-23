@@ -19,7 +19,7 @@
 									<li><a href="<?= base_url('profil') ?>">Profil</a></li>
 									<li><a href="#">Program</a></li>
 									<li><a href="#">Berita</a></li>
-									<li><a href="#">Kontak</a></li>
+									<li><a href="#">Galeri</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -55,7 +55,8 @@
 			<div class="row align-items-center justify-content-center">
 				<div class="col-xl-6 col-md-6">
 					<div class="illastrator_png">
-						<img src="<?= base_url('assets/frontend/images/landing/banner/ilustration_utama.png') ?>" alt="">
+						<img src="<?= base_url('assets/frontend/images/landing/banner/ilustration_utama.png') ?>"
+							alt="">
 					</div>
 				</div>
 				<div class="col-xl-6 col-md-6">
@@ -79,7 +80,8 @@
 			<div class="col-xl-5 col-lg-6">
 				<div class="single_about_info">
 					<h3>Lebih dari 50 Tutorial <br> dari 20 Program</h3>
-					<p>Sistem pembelajaran yang kami terapkan sangat mudah dimengerti dan dipelajari, karena tutorial pembelajran dapat berupa video praktik
+					<p>Sistem pembelajaran yang kami terapkan sangat mudah dimengerti dan dipelajari, karena tutorial
+						pembelajran dapat berupa video praktik
 						dan juga terdapat kuis yang menarik.
 					</p>
 					<a href="#" class="boxed_btn">Daftar Sekarang</a>
@@ -153,7 +155,8 @@
 							<div class="single_courses">
 								<div class="thumb">
 									<a href="#">
-										<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>" alt="">
+										<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>"
+											alt="">
 									</a>
 								</div>
 								<div class="courses_info">
@@ -177,7 +180,8 @@
 							<div class="single_courses">
 								<div class="thumb">
 									<a href="#">
-										<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>" alt="">
+										<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>"
+											alt="">
 									</a>
 								</div>
 								<div class="courses_info">
@@ -197,7 +201,7 @@
 								</div>
 							</div>
 						</div>
-						
+
 
 
 						<div class="col-xl-12">
@@ -242,7 +246,8 @@
 					<div class="col-xl-12">
 						<div class="testmonial_text text-center">
 							<div class="author_img">
-								<img src="<?= base_url('assets/') ?>frontend/images/landing/testmonial/3.png" alt="" class="img-fluid">
+								<img src="<?= base_url('assets/') ?>frontend/images/landing/testmonial/3.png" alt=""
+									class="img-fluid">
 							</div>
 							<p>
 								"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Fuga neque,
@@ -278,7 +283,8 @@
 				<div class="single_course text-center">
 					<div class="icon">
 						<!-- <i class="flaticon-art-and-design"></i> -->
-						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/premium.png" alt="" class="img-fluid">
+						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/premium.png" alt=""
+							class="img-fluid">
 					</div>
 					<h3>Kualitas Premium</h3>
 					<p>
@@ -291,7 +297,8 @@
 				<div class="single_course text-center">
 					<div class="icon">
 						<!-- <i class="flaticon-art-and-design"></i> -->
-						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/harga.png" alt="" class="img-fluid">
+						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/harga.png" alt=""
+							class="img-fluid">
 					</div>
 					<h3>Harga Terjangkau</h3>
 					<p>
@@ -304,7 +311,8 @@
 				<div class="single_course text-center">
 					<div class="icon">
 						<!-- <i class="flaticon-art-and-design"></i> -->
-						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/sertifikat.png" alt="" class="img-fluid">
+						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/sertifikat.png" alt=""
+							class="img-fluid">
 					</div>
 					<h3>Serifikat Resmi</h3>
 					<p>
@@ -317,7 +325,8 @@
 				<div class="single_course text-center">
 					<div class="icon">
 						<!-- <i class="flaticon-art-and-design"></i> -->
-						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/profesional.png" alt="" class="img-fluid">
+						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/profesional.png" alt=""
+							class="img-fluid">
 					</div>
 					<h3>Dididik menjadi tenaga kerja profesional</h3>
 					<p>
@@ -330,3 +339,35 @@
 	</div>
 </div>
 <!-- our_courses_end -->
+
+<!-- Partner start -->
+<div class="partner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section_title partner_title text-center">
+					<h3 class="p-0">Partner LPKS</h3>
+					<p>Berikut adalah Partner kami yang telah bekerjasama dengan baik dalam menunjang program pelatihan.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 partner_item">
+				<div class="partner_active owl-carousel owl-theme">
+					<div class="item"><img class="img-fluid"
+							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
+					<div class="item"><img class="img-fluid"
+							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
+					<div class="item"><img class="img-fluid"
+							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
+					<div class="item"><img class="img-fluid"
+							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
+					<div class="item"><img class="img-fluid"
+							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Partner end -->

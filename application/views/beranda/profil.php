@@ -19,14 +19,14 @@
 									<li><a class="active" href="<?= base_url('profil') ?>">Profil</a></li>
 									<li><a href="#">Program</a></li>
 									<li><a href="#">Berita</a></li>
-									<li><a href="#">Kontak</a></li>
+									<li><a href="#">Galeri</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 						<div class="log_chat_area d-flex align-items-center">
-							<a href="#test-form" class="login popup-with-form">
+							<a href="#login" class="login popup-with-form">
 								<i class="flaticon-user"></i>
 								<span>Masuk | Daftar</span>
 							</a>
@@ -161,7 +161,8 @@
 								<h5 class="mb-0">
 									<button class="btn btn-link collapsed" data-toggle="collapse"
 										data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-										<i class="flaticon-question"></i><span>Berdirinya <i class="ti-angle-down"></i></span>
+										<i class="flaticon-question"></i><span>Berdirinya <i
+												class="ti-angle-down"></i></span>
 									</button>
 								</h5>
 							</div>
@@ -202,7 +203,8 @@
 								<h5 class="mb-0">
 									<button class="btn btn-link collapsed" data-toggle="collapse"
 										data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
-										<i class="flaticon-question"></i> Kurikulum dan Metode Pengajaran <i class="ti-angle-down"></i>
+										<i class="flaticon-question"></i> Kurikulum dan Metode Pengajaran <i
+											class="ti-angle-down"></i>
 									</button>
 								</h5>
 							</div>
@@ -213,45 +215,107 @@
 									pelatihan tata ketrampilan menjahit dari Direktorat Jenderal Pembinaan Pelatihan dan
 									Produktivitas. <br>
 									Adapun bahan pelajaran /materi pembelajaran memakai : <br>
-									Modul menjahit wanita dan anak modul dari LPKS sendiri dan dipandu dari Dinas. <br> <br>
+									Modul menjahit wanita dan anak modul dari LPKS sendiri dan dipandu dari Dinas. <br>
+									<br>
 
 									Metode Pengajaran : <br>
-                                    Metode pembelajaran/pelatihan dibagi 3, yaitu :
-                                    <ol type="1">
-                                        <li style="list-style:inherit;">Pembelajaran teori di dalam kelas.</li>
-                                        <li style="list-style:inherit;">Pembelajaran praktek di ruang praktek.</li>
-                                        <li style="list-style:inherit;">Pembelajaran  praktek kerja lapangan di perusahaan garment atau pengusaha jahitan lainnya.</li>
-                                    </ol>
-                                    Sedangkan metode pembelajaran dilaksanakan sebagai berikut :
-                                    <ol type="1">
-                                        <li style="list-style:inherit;">Pengajaran dan penjelasan materi dengan metode ceramah, diskusi, studi kasus.</li>
-                                        <li style="list-style:inherit;">Praktek dengan bantuan alat, bahan dan tenaga ahli/supervisor, survey dan pengenalan lapangan.</li>
-                                        <li style="list-style:inherit;">Kombinasi dan ruang praktek usaha operator garment.</li>
-                                    </ol>
+									Metode pembelajaran/pelatihan dibagi 3, yaitu :
+									<ol type="1">
+										<li style="list-style:inherit;">Pembelajaran teori di dalam kelas.</li>
+										<li style="list-style:inherit;">Pembelajaran praktek di ruang praktek.</li>
+										<li style="list-style:inherit;">Pembelajaran praktek kerja lapangan di
+											perusahaan garment atau pengusaha jahitan lainnya.</li>
+									</ol>
+									Sedangkan metode pembelajaran dilaksanakan sebagai berikut :
+									<ol type="1">
+										<li style="list-style:inherit;">Pengajaran dan penjelasan materi dengan metode
+											ceramah, diskusi, studi kasus.</li>
+										<li style="list-style:inherit;">Praktek dengan bantuan alat, bahan dan tenaga
+											ahli/supervisor, survey dan pengenalan lapangan.</li>
+										<li style="list-style:inherit;">Kombinasi dan ruang praktek usaha operator
+											garment.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading_5">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse"
+										data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_4">
+										<i class="flaticon-question"></i> Sertifikat Lembaga <i
+											class="ti-angle-down"></i>
+									</button>
+								</h5>
+							</div>
+							<div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+								<div class="card-body">
+									<img class="sertifikat_lembaga"
+										src="<?= base_url('assets/frontend/images/landing/placeholder_image.png') ?>"
+										alt="">
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="heading_6">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse"
+										data-target="#collapse_6" aria-expanded="false" aria-controls="collapse_4">
+										<i class="flaticon-question"></i> Kontak <i class="ti-angle-down"></i>
+									</button>
+								</h5>
+							</div>
+							<div id="collapse_6" class="collapse" aria-labelledby="heading_6" data-parent="#accordion">
+								<div class="card-body">
+									<table class="kontak-kami">
+										<tr>
+											<th width="20%">Alamat</th>
+											<td width="50%">Kauman Timur Rt. 001 Rw.004 No. 13 Kel. Cawas, Kabupaten Klaten.</td>
+										</tr>
+										<tr>
+											<th width="20%">Telp/WA</th>
+											<td width="50%">081578933767</td>
+										</tr>
+										<tr>
+											<th width="20%">Email</th>
+											<td width="50%">lkprinicawas@gmail.com</td>
+										</tr>
+										<tr>
+											<th width="20%">Web</th>
+											<td width="50%">lkprini.co.id</td>
+										</tr>
+										<tr>
+											<th width="20%">Facebook</th>
+											<td width="50%">Lkp Rini</td>
+										</tr>
+										<tr>
+											<th width="20%">Instagram</th>
+											<td width="50%">lpksrini</td>
+										</tr>
+									</table>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>
 
-<!-- our_team_member_start -->
+<!-- struktur start -->
 <div class="our_team_member">
 	<div class="container">
-        <div class="courses_details_info p-0">
-            <div class="row">
-            <div class="col-xl-12 col-lg-12">
-				<div class="single_courses">
-					<h3 class="second_title">Struktur</h3>
+		<div class="courses_details_info p-0">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12">
+					<div class="single_courses">
+						<h3 class="second_title">Struktur</h3>
+					</div>
 				</div>
-            </div>
-        </div>
-        </div>
-        
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-xl-3 col-md-6 col-lg-3">
 				<div class="single_team">
@@ -317,8 +381,59 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
 </div>
-<!-- our_team_member_end -->
+<!-- struktur end -->
+
+<!-- pembimbing start -->
+<div class="our_team_member pembimbing">
+	<div class="container">
+		<div class="courses_details_info p-0">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12">
+					<div class="single_courses">
+						<h3 class="second_title">Pembimbing</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xl-3 col-md-6 col-lg-3">
+				<div class="single_team">
+					<div class="thumb">
+						<img src="<?= base_url('assets/frontend/images/landing/struktur/pem_1.jpeg') ?>" alt="">
+						<div class="social_link">
+							<a href="#"><i class="fa fa-envelope"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="master_name text-center">
+						<h3>Dwi Sari Septina</h3>
+						<p>Pembimbing</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-md-6 col-lg-3">
+				<div class="single_team">
+					<div class="thumb">
+						<img src="<?= base_url('assets/frontend/images/landing/struktur/pem_2.jpg') ?>" alt="">
+						<div class="social_link">
+							<a href="#"><i class="fa fa-envelope"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</div>
+					</div>
+					<div class="master_name text-center">
+						<h3>Luluk</h3>
+						<p>Pembimbing</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- struktur end -->
