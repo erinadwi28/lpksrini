@@ -17,9 +17,9 @@
 								<ul id="navigation">
 									<li><a class="active" href="<?= base_url('beranda') ?>">Beranda</a></li>
 									<li><a href="<?= base_url('profil') ?>">Profil</a></li>
-									<li><a href="#">Program</a></li>
+									<li><a href="<?= base_url('pelatihan') ?>">Program</a></li>
 									<li><a href="#">Berita</a></li>
-									<li><a href="#">Kontak</a></li>
+									<li><a href="<?= base_url('gallery') ?>">Galery</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -125,7 +125,8 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="section_title text-center mb-4">
-					<h3>Program Pelatihan</h3><br>
+					<h3>Program Pelatihan</h3>
+					<p>Pilih program pelatihan yang kamu inginkan.</p><br>
 				</div>
 			</div>
 		</div>
@@ -152,9 +153,7 @@
 						<div class="col-xl-4 col-lg-4 col-md-6">
 							<div class="single_courses">
 								<div class="thumb">
-									<a href="#">
-										<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>" alt="">
-									</a>
+									<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>" alt="">
 								</div>
 								<div class="courses_info">
 									<h3><a href="#">Menjahit Tata Busana</a></h3>
@@ -176,9 +175,7 @@
 						<div class="col-xl-4 col-lg-4 col-md-6">
 							<div class="single_courses">
 								<div class="thumb">
-									<a href="#">
-										<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>" alt="">
-									</a>
+									<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>" alt="">
 								</div>
 								<div class="courses_info">
 									<h3><a href="#">Menjahit Garmen</a></h3>
@@ -197,9 +194,6 @@
 								</div>
 							</div>
 						</div>
-						
-
-
 						<div class="col-xl-12">
 							<div class="more_courses text-center">
 								<a href="#" class="boxed_btn_rev">Pelatihan Lainnya</a>

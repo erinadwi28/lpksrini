@@ -2059,14 +2059,14 @@ h3 {
   background-size: cover;
   background-position: center center;
   text-align: center;
-  padding: 159px 0 159px 0;
+  padding: 120px 0 110px 0;
 }
 
 @media (max-width: 767px) {
 
   /* line 7, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_bradcam.scss */
   .bradcam_area {
-    padding: 150px 0;
+    padding: 90px 0 80px 0;
   }
 }
 
@@ -2074,7 +2074,7 @@ h3 {
 
   /* line 7, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_bradcam.scss */
   .bradcam_area {
-    padding: 150px 0;
+    padding: 90px 0 80px 0;
   }
 }
 
@@ -6976,3 +6976,243 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/*--------------------Program Pelatihan--------------------*/
+.program_pelatihan{
+  margin-top: -120px; 
+  padding: 0 100px 100px 100px;
+}
+
+.program_pelatihan .deskripsi_pelatihan{
+  margin-bottom: 30px;
+}
+
+.program_pelatihan .deskripsi_pelatihan img{
+  max-width: 65rem;
+}
+
+.program_pelatihan .card{
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+
+.program_pelatihan .card img{
+  border-radius: 5px 5px 0 0;
+  height: 400px;
+}
+
+@media (max-width: 576px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan{
+    margin-top: -80px; 
+    padding: 0 10px 30px 10px;
+  }
+  
+  .program_pelatihan .card img{
+    height: 230px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan{
+    margin-top: -80px; 
+    padding: 0 10px 30px 10px;
+  }
+  
+  .program_pelatihan .card img{
+    height: 230px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan{
+    margin-top: -80px; 
+    padding: 0 10px 30px 10px;
+  }
+  
+  .program_pelatihan .card img{
+    height: 230px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan{
+    margin-top: -80px; 
+    padding: 0 10px 30px 10px;
+  }
+  
+  .program_pelatihan .card img{
+    height: 230px;
+  }
+}
+
+.program_pelatihan .star_prise {
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+/* line 76, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+.program_pelatihan .star_prise .star i {
+  font-size: 20px;
+  color: #FD8E5E;
+}
+
+/* line 81, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+.program_pelatihan .star_prise .star span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #919191;
+}
+
+/* line 88, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+.program_pelatihan .star_prise .prise span {
+  font-size: 20px;
+}
+
+/* line 90, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+.program_pelatihan .star_prise .prise span.offer {
+  color: #C7C7C7;
+  text-decoration: line-through;
+  margin-right: 14px;
+}
+
+/* line 95, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+.program_pelatihan .star_prise .prise span.active_prise {
+  color: #1F1F1F;
+}
+
+
+@media (max-width: 576px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan .star_prise .star i {
+    font-size: 16px;
+  }
+  
+  /* line 81, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .star span {
+    font-size: 14px;
+  }
+  
+  /* line 88, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .prise span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan .star_prise .star i {
+    font-size: 16px;
+  }
+  
+  /* line 81, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .star span {
+    font-size: 14px;
+  }
+  
+  /* line 88, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .prise span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan .star_prise .star i {
+    font-size: 16px;
+  }
+  
+  /* line 81, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .star span {
+    font-size: 14px;
+  }
+  
+  /* line 88, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .prise span {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+  /* line 150, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog_part.scss */
+  .program_pelatihan .star_prise .star i {
+    font-size: 16px;
+  }
+  
+  /* line 81, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .star span {
+    font-size: 14px;
+  }
+  
+  /* line 88, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
+  .program_pelatihan .star_prise .prise span {
+    font-size: 16px;
+  }
+}
+
+
+/*--------------------Gallery--------------------*/
+
+.gallery{
+  padding: 50px;
+}
+
+.gallery img.zoom {
+  width: 100%;
+  margin: 12px ;
+  height: 200px;
+  border-radius:5px;
+  object-fit:cover;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+}
+
+.transition_gallery {
+  -webkit-transform: scale(1.2); 
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 576px) {
+  .gallery{
+    padding: 20px 20px 20px 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .gallery{
+    padding: 20px 20px 20px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .gallery{
+    padding: 20px 20px 20px 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .gallery{
+    padding: 20px 20px 20px 0;
+  }
+}

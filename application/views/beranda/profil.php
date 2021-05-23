@@ -17,9 +17,9 @@
 								<ul id="navigation">
 									<li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
 									<li><a class="active" href="<?= base_url('profil') ?>">Profil</a></li>
-									<li><a href="#">Program</a></li>
+									<li><a href="<?= base_url('pelatihan') ?>">Program</a></li>
 									<li><a href="#">Berita</a></li>
-									<li><a href="#">Kontak</a></li>
+									<li><a href="<?= base_url('gallery') ?>">Galery</a></li>
 								</ul>
 							</nav>
 						</div>
