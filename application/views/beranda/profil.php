@@ -17,23 +17,9 @@
 								<ul id="navigation">
 									<li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
 									<li><a class="active" href="<?= base_url('profil') ?>">Profil</a></li>
-									<li><a href="#">Program <i class="ti-angle-down"></i></a>
-										<ul class="submenu">
-											<li><a href="">Pelatihan <i class="ti-angle-down"></i></a>
-												<ul class="subsubmenu">
-													<li>
-													<li><a href="<?= base_url('program/tata_busana') ?>">Menjahit Tata
-															Busana</a></li>
-											</li>
-											<li>
-											<li><a href="<?= base_url('program/garment') ?>">Menjahit Garment</a></li>
-									</li>
-								</ul>
-								</li>
-								</ul>
-								</li>
-								<li><a href="#">Berita</a></li>
-								<li><a href="#">Kontak</a></li>
+									<li><a href="#">Program</a></li>
+									<li><a href="#">Berita</a></li>
+									<li><a href="#">Kontak</a></li>
 								</ul>
 							</nav>
 						</div>

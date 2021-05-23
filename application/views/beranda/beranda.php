@@ -12,34 +12,21 @@
 						</div>
 					</div>
 					<div class="col-xl-7 col-lg-7">
-						<div class="main-menu  d-none d-lg-block">
+						<div class="main-menu d-none d-lg-block">
 							<nav>
 								<ul id="navigation">
 									<li><a class="active" href="<?= base_url('beranda') ?>">Beranda</a></li>
 									<li><a href="<?= base_url('profil') ?>">Profil</a></li>
-									<li><a href="#">Program <i class="ti-angle-down"></i></a>
-										<ul class="submenu">
-											<li><a href="">Pelatihan <i class="ti-angle-down"></i></a>
-												<ul class="subsubmenu">
-													<li>
-													<li><a href="<?= base_url('program/tata_busana') ?>">Menjahit Tata Busana</a></li>
-											</li>
-											<li>
-											<li><a href="<?= base_url('program/garment') ?>">Menjahit Garment</a></li>
-									</li>
-								</ul>
-								</li>
-								</ul>
-								</li>
-								<li><a href="#">Berita</a></li>
-								<li><a href="#">Kontak</a></li>
+									<li><a href="#">Program</a></li>
+									<li><a href="#">Berita</a></li>
+									<li><a href="#">Kontak</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 						<div class="log_chat_area d-flex align-items-center">
-							<a href="#test-form" class="login popup-with-form">
+							<a href="#login" class="login popup-with-form">
 								<i class="flaticon-user"></i>
 								<span>Masuk | Daftar</span>
 							</a>
@@ -73,10 +60,10 @@
 				</div>
 				<div class="col-xl-6 col-md-6">
 					<div class="slider_info">
-						<h3>Saatnya <br>
-							menjadi Tenaga Kerja <br>
-							berjiwa Profesional </h3>
-						<a href="#" class="boxed_btn">Mulai Cari Pelatihan</a>
+						<h3>Saatnya <br> menjadi Tenaga Kerja <br> berjiwa Profesional </h3>
+						<a href="#login" class="login popup-with-form boxed_btn">
+							<span>Masuk | Daftar</span>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -91,11 +78,10 @@
 		<div class="row">
 			<div class="col-xl-5 col-lg-6">
 				<div class="single_about_info">
-					<h3>Lebih dari 50 Tutorial <br>
-						dari 20 Program</h3>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis praesentium nobis harum
-						nihil! Dignissimos doloribus temporibus et ad, beatae neque, amet maiores deleniti molestiae
-						odio minima a harum! Non, illum? </p>
+					<h3>Lebih dari 50 Tutorial <br> dari 20 Program</h3>
+					<p>Sistem pembelajaran yang kami terapkan sangat mudah dimengerti dan dipelajari, karena tutorial pembelajran dapat berupa video praktik
+						dan juga terdapat kuis yang menarik.
+					</p>
 					<a href="#" class="boxed_btn">Daftar Sekarang</a>
 				</div>
 			</div>
@@ -139,15 +125,11 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="section_title text-center mb-4">
-					<h3>Program Pelatihan</h3>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima natus asperiores corrupti
-						nobis sint. <br> Recusandae a enim esse ut consequatur fugiat nemo suscipit temporibus
-						voluptate
-						laboriosam. Provident alias nulla quos..</p>
+					<h3>Program Pelatihan</h3><br>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-xl-12">
 				<div class="course_nav">
 					<nav>
@@ -160,7 +142,7 @@
 					</nav>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<div class="all_courses">
 		<div class="container">
@@ -215,6 +197,7 @@
 								</div>
 							</div>
 						</div>
+						
 
 
 						<div class="col-xl-12">

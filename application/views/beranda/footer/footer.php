@@ -97,7 +97,7 @@
 
 
 <!-- form itself end-->
-<form id="test-form" class="white-popup-block mfp-hide">
+<form id="login" class="white-popup-block mfp-hide">
 	<div class="popup_box ">
 		<div class="popup_inner">
 			<div class="logo text-center">

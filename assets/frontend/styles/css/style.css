@@ -894,12 +894,18 @@ h3 {
 .header-area .main-header-area .logo-img {
   text-align: center;
 }
+.header-area .main-header-area .logo-img img{
+  height: 45px;
+}
 
 @media (max-width: 767px) {
 
   /* line 29, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img {
     text-align: left;
+  }
+  .header-area .main-header-area .logo-img img{
+    height: 35px;
   }
 }
 
@@ -909,6 +915,9 @@ h3 {
   .header-area .main-header-area .logo-img {
     text-align: left;
   }
+  .header-area .main-header-area .logo-img img{
+    height: 35px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -916,6 +925,9 @@ h3 {
   /* line 29, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_header.scss */
   .header-area .main-header-area .logo-img {
     text-align: left;
+  }
+  .header-area .main-header-area .logo-img img{
+    height: 35px;
   }
 }
 
@@ -1011,7 +1023,7 @@ h3 {
   text-transform: capitalize;
   font-weight: 400;
   display: inline-block;
-  padding: 34px 0;
+  padding: 23px 0;
   font-family: "Poppins", sans-serif;
   position: relative;
   text-transform: capitalize;
@@ -1706,9 +1718,8 @@ h3 {
   border-radius: 50%;
   text-align: center;
   position: absolute;
-  top: 0;
-  left: 27%;
-  top: 50%;
+  left: 32%;
+  top: 40%;
 }
 
 @media (max-width: 767px) {
@@ -1729,8 +1740,8 @@ h3 {
 
 /* line 165, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_about.scss */
 .about_area .about_tutorials .courses-sky .inner_courses {
-  width: 310px;
-  height: 310px;
+  width: 290px;
+  height: 290px;
   border-radius: 50%;
   text-align: center;
   position: relative;
@@ -2048,7 +2059,7 @@ h3 {
   background-size: cover;
   background-position: center center;
   text-align: center;
-  padding: 269px 0 159px 0;
+  padding: 159px 0 159px 0;
 }
 
 @media (max-width: 767px) {
@@ -2316,7 +2327,7 @@ label{
 }
 
 /* line 173, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_bradcam.scss */
-#test-form,
+#login,
 #daftar {
   display: inline-block;
   margin: auto;
@@ -2667,6 +2678,11 @@ label{
 /* line 44, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_faq.scss */
 .courses_details_info #accordion .card .card-body {
   padding: 0 40px 40px 76px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 10px;
+  margin-bottom: 42px;
 }
 
 .courses_details_info #accordion .card .card-body {
@@ -3701,7 +3717,7 @@ label{
 
 /* line 112, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
 .popular_courses .more_courses {
-  margin-top: 30px;
+  margin-top: 0;
 }
 
 /* line 116, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
