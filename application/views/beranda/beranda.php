@@ -12,21 +12,21 @@
 						</div>
 					</div>
 					<div class="col-xl-7 col-lg-7">
-						<div class="main-menu d-none d-lg-block">
+						<div class="main-menu  d-none d-lg-block">
 							<nav>
 								<ul id="navigation">
 									<li><a class="active" href="<?= base_url('beranda') ?>">Beranda</a></li>
 									<li><a href="<?= base_url('profil') ?>">Profil</a></li>
-									<li><a href="#">Program</a></li>
-									<li><a href="#">Berita</a></li>
-									<li><a href="#">Galeri</a></li>
+									<li><a href="<?= base_url('pelatihan') ?>">Program</a></li>
+									<li><a href="<?= base_url('berita') ?>">Berita</a></li>
+									<li><a href="<?= base_url('galeri') ?>">Galeri</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 						<div class="log_chat_area d-flex align-items-center">
-							<a href="#login" class="login popup-with-form">
+							<a href="#test-form" class="login popup-with-form">
 								<i class="flaticon-user"></i>
 								<span>Masuk | Daftar</span>
 							</a>
@@ -127,7 +127,8 @@
 		<div class="row">
 			<div class="col-xl-12">
 				<div class="section_title text-center mb-4">
-					<h3>Program Pelatihan</h3><br>
+					<h3>Program Pelatihan</h3>
+					<p>Pilih program pelatihan yang kamu inginkan.</p><br>
 				</div>
 			</div>
 		</div>
@@ -154,10 +155,7 @@
 						<div class="col-xl-4 col-lg-4 col-md-6">
 							<div class="single_courses">
 								<div class="thumb">
-									<a href="#">
-										<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>"
-											alt="">
-									</a>
+									<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>" alt="">
 								</div>
 								<div class="courses_info">
 									<h3><a href="#">Menjahit Tata Busana</a></h3>
@@ -179,10 +177,7 @@
 						<div class="col-xl-4 col-lg-4 col-md-6">
 							<div class="single_courses">
 								<div class="thumb">
-									<a href="#">
-										<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>"
-											alt="">
-									</a>
+									<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>" alt="">
 								</div>
 								<div class="courses_info">
 									<h3><a href="#">Menjahit Garmen</a></h3>
@@ -201,9 +196,6 @@
 								</div>
 							</div>
 						</div>
-
-
-
 						<div class="col-xl-12">
 							<div class="more_courses text-center">
 								<a href="#" class="boxed_btn_rev">Pelatihan Lainnya</a>

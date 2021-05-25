@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="<?= base_url('assets/frontend/styles/css/animate.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/styles/css/slicknav.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/frontend/styles/css/style.css') ?>">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 
 <body>

@@ -316,7 +316,28 @@
 		$("#search_input").focus();
 	});
 
-})(jQuery);
+})(jQuery);	
+
+
+
+
+
+//-----------Gallery-----------//
+
+$(document).ready(function(){
+  $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+    
+    $(".zoom").hover(function(){
+		
+		$(this).addClass('transition_gallery');
+	}, function(){
+        
+		$(this).removeClass('transition_gallery');
+	});
+});
 
 // Partner
 
@@ -341,4 +362,3 @@
         }
       }
   });
-	

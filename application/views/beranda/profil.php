@@ -17,16 +17,16 @@
 								<ul id="navigation">
 									<li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
 									<li><a class="active" href="<?= base_url('profil') ?>">Profil</a></li>
-									<li><a href="#">Program</a></li>
-									<li><a href="#">Berita</a></li>
-									<li><a href="#">Galeri</a></li>
+									<li><a href="<?= base_url('pelatihan') ?>">Program</a></li>
+									<li><a href="<?= base_url('berita') ?>">Berita</a></li>
+									<li><a href="<?= base_url('galeri') ?>">Galeri</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 						<div class="log_chat_area d-flex align-items-center">
-							<a href="#login" class="login popup-with-form">
+							<a href="#test-form" class="login popup-with-form">
 								<i class="flaticon-user"></i>
 								<span>Masuk | Daftar</span>
 							</a>
