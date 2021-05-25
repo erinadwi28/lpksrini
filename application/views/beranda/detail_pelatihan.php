@@ -17,9 +17,9 @@
 								<ul id="navigation">
 									<li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
 									<li><a href="<?= base_url('profil') ?>">Profil</a></li>
-									<li><a href="<?= base_url('pelatihan') ?>">Program</a></li>
+									<li><a class="active" href="<?= base_url('pelatihan') ?>">Program</a></li>
 									<li><a href="<?= base_url('berita') ?>">Berita</a></li>
-									<li><a class="active" href="<?= base_url('galeri') ?>">Galeri</a></li>
+									<li><a href="<?= base_url('galeri') ?>">Galeri</a></li>
 								</ul>
 							</nav>
 						</div>

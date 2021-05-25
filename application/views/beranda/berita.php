@@ -58,54 +58,49 @@
 <section class="blog_area section-padding">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12 mb-5 mb-lg-0">
+			<div class="col-lg-12 mb-5 ml-3 mr-3 mb-lg-0">
 				<div class="blog_left_sidebar">
 					<article class="blog_item">
 						<div class="row blog_details mb-4">
 							<div class="col-md-4">
 								<div class="blog_item_img">
-									<img class="img-fluid"
-										src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png"
-										alt="">
-
+									<img class="img-fluid" src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt="">
 								</div>
 							</div>
 							<div class="col-md-8">
 								<div class="">
-									<a class="d-inline-block" href="single-blog.html">
-										<h2>Mulai hari ini sampai 3 hari kedepan ada diskon!!!</h2>
+									<a class="d-inline-block" href="<?= base_url('berita/detail') ?>">
+										<h2>Welcome to Blog Post!</h2>
 									</a>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic non quisquam
 										accusamus, impedit nobis obcaecati aliquam corrupti quia consequatur quasi,
 										nulla
 										perferendis ipsum! Architecto a quasi blanditiis dicta provident?</p>
 									<ul class="blog-info-link">
-										<li class="date"><i class="fa fa-calendar"></i> Selasa, 24 Mei 2021</li>
+										<li class="date"><i class="fa fa-calendar"></i>Selasa, 24 Mei 2021</li>
 										<!-- <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li> -->
 									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="row blog_details">
+
+						<div class="row blog_details mb-4">
 							<div class="col-md-4">
 								<div class="blog_item_img">
-									<img class="img-fluid"
-										src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png"
-										alt="">
-
+									<img class="img-fluid" src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt="">
 								</div>
 							</div>
 							<div class="col-md-8">
 								<div class="">
-									<a class="d-inline-block" href="single-blog.html">
-										<h2>Mulai hari ini sampai 3 hari kedepan ada diskon!!!</h2>
+									<a class="d-inline-block" href="<?= base_url('berita/detail') ?>">
+										<h2>Welcome to Blog Post!</h2>
 									</a>
 									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque hic non quisquam
 										accusamus, impedit nobis obcaecati aliquam corrupti quia consequatur quasi,
 										nulla
 										perferendis ipsum! Architecto a quasi blanditiis dicta provident?</p>
 									<ul class="blog-info-link">
-										<li class="date"><i class="fa fa-calendar"></i> Selasa, 24 Mei 2021</li>
+										<li class="date"><i class="fa fa-calendar"></i>Selasa, 24 Mei 2021</li>
 										<!-- <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li> -->
 									</ul>
 								</div>

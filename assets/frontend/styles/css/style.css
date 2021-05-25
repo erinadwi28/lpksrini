@@ -1460,6 +1460,7 @@ h3 {
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_about.scss */
   .about_area {
     padding: 100px 0;
+    margin-top: -70px;
   }
 }
 
@@ -2608,6 +2609,7 @@ label{
   /* line 1, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_faq.scss */
   .courses_details_info {
     padding-top: 60px;
+    margin-top: -110px;
   }
 }
 
@@ -3528,7 +3530,7 @@ label{
 .popular_courses {
   padding-top: 100px;
   padding-bottom: 200px;
-  background: linear-gradient(#fff , #F5F4F0 40%);
+  background: #fff ;
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
@@ -3541,6 +3543,9 @@ label{
   /* line 4, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
   .popular_courses.plus_padding {
     padding-bottom: 100px;
+  }
+  .popular_courses {
+    margin-top: -50px;
   }
 }
 
@@ -5278,7 +5283,15 @@ h6 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+.blog_area {
+  background: #fff;
+}
 
+@media (max-width: 576px) {  
+  .blog_area {
+    margin-top: -80px;
+  }
+}
 /* line 14, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_blog.scss */
 /* .blog_area a:hover,
 .blog_area a :hover {
@@ -7002,9 +7015,9 @@ h6 {
 }
 
 .program_pelatihan .card{
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(167, 164, 164, 0.3);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(167, 164, 164, 0.3);
+  box-shadow: 0px 10px 20px 0px rgba(167, 164, 164, 0.3);
   border-radius: 5px;
 }
 
@@ -7179,8 +7192,8 @@ h6 {
 /*--------------------Gallery--------------------*/
 
 .gallery{
-  padding: 50px;
-  background: linear-gradient(#fff , #F5F4F0 40%);
+  padding: 80px 50px 100px 50px;
+  background: #fff;
 }
 
 .gallery img.zoom {
@@ -7229,7 +7242,7 @@ h6 {
 
 /* Partner */
 .partner {
-    background: linear-gradient(#fff, #F5F4F0 40%);
+  background: #fff;
 
 }
 
@@ -7243,10 +7256,26 @@ h6 {
 
 /* Struktur */
 .pembimbing {
-    background: linear-gradient(#fff , #F5F4F0 40%);
+  background: #fff;
 }
 
 /* sertifikat lembaga */
 .sertifikat_lembaga {
   width: 400px !important;
   height: 200px !important;
+}
+
+/*--------------------Detail Berita--------------------*/
+.isi_berita{
+  margin: -20px 0 70px 0;
+}
+
+.isi_berita img{
+  height: 300px;
+  width: 100%;
+}
+
+.isi_berita .card{
+  box-shadow: 0px 10px 20px 0px rgba(167, 164, 164, 0.3);
+  border-radius: 5px;
+}

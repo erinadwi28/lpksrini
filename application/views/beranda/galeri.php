@@ -56,31 +56,31 @@
 
 
 
-    <!-- gallery -->
-    <div class="gallery">
-        <div class="container page-top">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-                        <img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-                        <img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-                        <img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-                        <img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- gallery -->
+<div class="gallery">
+	<div class="container page-top">
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
+					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
+					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
+					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
+				</a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
+					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
 
