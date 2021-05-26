@@ -59,27 +59,14 @@
 <!-- gallery -->
 <div class="gallery">
 	<div class="container page-top">
-		<div class="row">
+		<div class="row" id="galeri_foto">
+		<?php foreach ($detail_galeri as $detail) { ?>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
+				<a href="<?= base_url("assets/frontend/images/landing/gallery/$detail->foto_galeri") ?>" class="fancybox" rel="ligthbox">
+					<img  src="<?= base_url("assets/frontend/images/landing/gallery/$detail->foto_galeri") ?>" class="zoom img-fluid "  alt="">
 				</a>
 			</div>
-			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
-				</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
-				</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a href="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="fancybox" rel="ligthbox">
-					<img  src="<?= base_url('assets/frontend/images/landing/gallery/example_gallery.jpg') ?>" class="zoom img-fluid "  alt="">
-				</a>
-			</div>
+		<?php } ?>
 		</div>
 	</div>
 </div>

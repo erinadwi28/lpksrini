@@ -62,9 +62,10 @@
 				<div class="single_about_info">
 					<h3>Mengenal LPKS Rini <br>
 						lebih jauh Yuk !</h3>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas autem illum molestiae
-						temporibus obcaecati ad quisquam, fuga alias debitis doloribus vel excepturi tempore nisi
-						corrupti iusto, quasi repellat quae. Voluptates.</p>
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LPKS Rini merupakan Lembaga Pelatihan Kerja Swasta yang didirikan oleh Ibu Sri Harini pada 6 Oktober 1987.
+					Lembaga ini memiliki beberapa program pelatihan, namun program unggulannya yaitu Menjahit Tata Busana. Mengapa Menjahit Tata Busana menjadi program unggulan?
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Busana akan selalu digunakan dan tidak akan rugi jika memiliki keahlian pada bidang Tata Busana, 
+					karena bisa digunakan secara pribadi bahkan bisa digunakan utk berusaha/melakukan bisnis. Salah satu bisnis yang cukup banyak peminat adalah Penjahit.</p>
 				</div>
 			</div>
 			<div class="col-xl-6 offset-xl-1 col-lg-6">
@@ -237,7 +238,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="card">
+						<!-- <div class="card">
 							<div class="card-header" id="heading_5">
 								<h5 class="mb-0">
 									<button class="btn btn-link collapsed" data-toggle="collapse"
@@ -254,7 +255,7 @@
 										alt="">
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div class="card">
 							<div class="card-header" id="heading_6">
 								<h5 class="mb-0">

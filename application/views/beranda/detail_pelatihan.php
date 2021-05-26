@@ -55,31 +55,27 @@
 
 
 <!-- program pelatihan -->
+<?php foreach ($detail_pelatihan as $detail) { ?>
 <div class="program_pelatihan">
 	<div class="container ">
 		<div class="row">
             <div class="col-lg-12">
                 <div class="card border-0">
-                    <img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>" alt="">
+                    <img src="<?= base_url("assets/frontend/images/landing/courses/$detail->gambar_pelatihan") ?>" alt="">
                     <div class="card-body">
-                        <h3 class="card-title">Menjahit Tata Busana</h3>
+                        <h3 class="card-title"><?= $detail->nama_pelatihan ?></h3>
                         <div class="star_prise d-flex justify-content-between">
                             <div class="star">
                                 <i class="flaticon-mark-as-favorite-star"></i>
                                 <span>(4.5)</span>
                             </div>
                             <div class="prise">
-                                <!-- <span class="offer">$89.00</span> -->
-                                <span class="active_prise">
-                                    Rp. 15.000.000
-                                </span>
+                                <span class="active_prise">Rp<?= number_format($detail->harga, 0, ",", ".") ?></span>
                             </div>
                         </div>
                         <div class="deskripsi_pelatihan">
                             <h5 class="card-title">Deskripsi Pelatihan</h5>
-                            <p class="card-text">Selamat datang di kelas Glamor Makeup online by Laode Yusuf. Di kelas makeup online ini, Laode Yusuf Professional Makeup Artist akan menuntun anda step by step teknik dia menciptakan sebuah makeup look yang terkesan glamor, namun tidak tebal ataupun menor. 
-                            Kelas ini dikemas dalam bentuk video tutorial, yang sangat mudah untuk diikuti, dan begitu jelas.
-                            Teknik Color Correcting oleh Laode ini adalah senjata pamungkas untuk menciptakan sebuah makeup yang tidak tebal, namun flawless dan dapat merubah penampilan anda untuk siap ke acara2 formal dan semi-formal.</p>
+                            <p class="card-text"><?= $detail->deskripsi ?></p>
                         </div>
                         <div class="deskripsi_pelatihan">
                             <h5 class="card-title">Kurikulum Pelatihan</h5>
@@ -87,7 +83,7 @@
                         <center>
                             <div class="table-responsive">
                                 <table class="table">
-                                    <img src="<?= base_url('assets/frontend/images/landing/kurikulum/kurikulum_garmen.jpg') ?>" alt="">  
+                                    <img src="<?= base_url("assets/frontend/images/landing/kurikulum/$detail->kurikulum") ?>" alt="">  
                                 </table>
                             </div>
                         </center>
@@ -100,5 +96,6 @@
         </div>
     </div>
 </div>
+<?php } ?>
 <!-- program pelatihan -->
 

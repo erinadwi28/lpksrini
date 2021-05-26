@@ -61,51 +61,8 @@
 		<div class="container">
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-					<div class="row">
-						<div class="col-xl-4 col-lg-4 col-md-6">
-							<div class="single_courses">
-								<div class="thumb">
-									<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>" alt="">
-								</div>
-								<div class="courses_info">
-									<h3><a href="<?= base_url('pelatihan/detail') ?>">Menjahit Tata Busana</a></h3>
-									<div class="star_prise d-flex justify-content-between">
-										<div class="star">
-											<i class="flaticon-mark-as-favorite-star"></i>
-											<span>(4.5)</span>
-										</div>
-										<div class="prise">
-											<!-- <span class="offer">$89.00</span> -->
-											<span class="active_prise">
-												Rp. 15.000.000
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6">
-							<div class="single_courses">
-								<div class="thumb">
-									<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>" alt="">
-								</div>
-								<div class="courses_info">
-									<h3><a href="#">Menjahit Garmen</a></h3>
-									<div class="star_prise d-flex justify-content-between">
-										<div class="star">
-											<i class="flaticon-mark-as-favorite-star"></i>
-											<span>(4.5)</span>
-										</div>
-										<div class="prise">
-											<!-- <span class="offer">$89.00</span> -->
-											<span class="active_prise">
-												Rp. 15.000.000
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="row" id="program_pelatihan">
+						<!-- data di app.js -->
 					</div>
 				</div>
 			</div>

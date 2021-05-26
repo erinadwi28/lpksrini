@@ -3,12 +3,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Galeri extends CI_Controller {
 
-	public function index()
-	{   
-        $data_title['title'] = 'Galeri';
+        function __construct(){
+                parent::__construct();
+                $this->load->model('M_landing', 'm_landing');
+        }
 
-        $this->load->view('beranda/header/header', $data_title);
-        $this->load->view('beranda/galeri');
-        $this->load->view('beranda/footer/footer');
+	public function index(){   
+                $data_title['title'] = 'Galeri';
+
+                $data['detail_galeri'] = $this->m_landing->get_data_galeri();
+
+                $this->load->view('beranda/header/header', $data_title);
+                $this->load->view('beranda/galeri', $data);
+                $this->load->view('beranda/footer/footer');
 	}
+
 }

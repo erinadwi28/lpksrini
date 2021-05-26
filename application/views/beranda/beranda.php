@@ -84,6 +84,10 @@
 						pembelajran dapat berupa video praktik
 						dan juga terdapat kuis yang menarik.
 					</p>
+					<p>Sistem pembelajaran yang kami terapkan sangat mudah dimengerti dan dipelajari, karena tutorial
+						pembelajran dapat berupa video praktik
+						dan juga terdapat kuis yang menarik.
+					</p>
 					<a href="#" class="boxed_btn">Daftar Sekarang</a>
 				</div>
 			</div>
@@ -128,7 +132,7 @@
 			<div class="col-xl-12">
 				<div class="section_title text-center mb-4">
 					<h3>Program Pelatihan</h3>
-					<p>Pilih program pelatihan yang kamu inginkan.</p><br>
+					<p>Pilih program pelatihan yang anda inginkan dan tentunya semua pelatihan akan bermanfaat untuk anda.</p><br>
 				</div>
 			</div>
 		</div>
@@ -151,55 +155,12 @@
 		<div class="container">
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-					<div class="row">
-						<div class="col-xl-4 col-lg-4 col-md-6">
-							<div class="single_courses">
-								<div class="thumb">
-									<img src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>" alt="">
-								</div>
-								<div class="courses_info">
-									<h3><a href="#">Menjahit Tata Busana</a></h3>
-									<div class="star_prise d-flex justify-content-between">
-										<div class="star">
-											<i class="flaticon-mark-as-favorite-star"></i>
-											<span>(4.5)</span>
-										</div>
-										<div class="prise">
-											<!-- <span class="offer">$89.00</span> -->
-											<span class="active_prise">
-												Rp. 15.000.000
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-6">
-							<div class="single_courses">
-								<div class="thumb">
-									<img src="<?= base_url('assets/frontend/images/landing/courses/8.jpg') ?>" alt="">
-								</div>
-								<div class="courses_info">
-									<h3><a href="#">Menjahit Garmen</a></h3>
-									<div class="star_prise d-flex justify-content-between">
-										<div class="star">
-											<i class="flaticon-mark-as-favorite-star"></i>
-											<span>(4.5)</span>
-										</div>
-										<div class="prise">
-											<!-- <span class="offer">$89.00</span> -->
-											<span class="active_prise">
-												Rp. 15.000.000
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-12">
-							<div class="more_courses text-center">
-								<a href="#" class="boxed_btn_rev">Pelatihan Lainnya</a>
-							</div>
+					<div class="row" id="program_pelatihan">
+						<!-- data di app.js -->
+					</div>
+					<div class="col-xl-12">
+						<div class="more_courses text-center">
+							<a href="<?= base_url('pelatihan') ?>" class="boxed_btn_rev">Pelatihan Lainnya</a>
 						</div>
 					</div>
 				</div>
@@ -264,13 +225,11 @@
 			<div class="col-md-12">
 				<div class="section_title text-center mb-100">
 					<h3 class="p-0">Spesial dari Kami</h3>
-					<p>Jangan ragu untuk bergabung bersama kami <br>
-						karena kami punya hal spesial untuk Anda.
+					<p>
+						Jangan ragu untuk bergabung bersama kami karena kami punya hal spesial untuk Anda.
 					</p>
 				</div>
 			</div>
-		</div>
-		<div class="row">
 			<div class="col-xl-3 col-md-6 col-lg-6">
 				<div class="single_course text-center">
 					<div class="icon">
@@ -280,8 +239,7 @@
 					</div>
 					<h3>Kualitas Premium</h3>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit illo perferendis
-						similique iste modi eius fugit natus quod porro quae.
+						Pelatihan yang kami lakukan sesuai dengan kurikulum yang kami sesuaikan langsung dengan mitra kerja atau partner.
 					</p>
 				</div>
 			</div>
@@ -294,8 +252,7 @@
 					</div>
 					<h3>Harga Terjangkau</h3>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit illo perferendis
-						similique iste modi eius fugit natus quod porro quae.
+						Biaya yang cukup terjangkau, namung materi yang kami ajarkan tetap komplit dan mudah untuk di pelajari.
 					</p>
 				</div>
 			</div>
@@ -308,8 +265,8 @@
 					</div>
 					<h3>Serifikat Resmi</h3>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit illo perferendis
-						similique iste modi eius fugit natus quod porro quae.
+						Setelah mengikuti pelatihan, peserta akan mendapatkan sertifikat dan 
+						lembaga kami telah diakui oleh Dinas Pendidikan dan Pemerintah.
 					</p>
 				</div>
 			</div>
@@ -320,10 +277,9 @@
 						<img src="<?= base_url('assets/') ?>frontend/images/landing/icon/profesional.png" alt=""
 							class="img-fluid">
 					</div>
-					<h3>Dididik menjadi tenaga kerja profesional</h3>
+					<h3>Dididik Profesional</h3>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit illo perferendis
-						similique iste modi eius fugit natus quod porro quae.
+						Kami mengajarkan pelatihan secara profesional, sungguh-sungguh, bagi yg mulai dari nol, akan dibantu hingga bisa.
 					</p>
 				</div>
 			</div>
@@ -337,7 +293,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="section_title partner_title text-center">
+				<div class="section_title text-center mb-100">
 					<h3 class="p-0">Partner LPKS</h3>
 					<p>Berikut adalah Partner kami yang telah bekerjasama dengan baik dalam menunjang program pelatihan.
 					</p>
@@ -346,17 +302,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12 partner_item">
-				<div class="partner_active owl-carousel owl-theme">
-					<div class="item"><img class="img-fluid"
-							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
-					<div class="item"><img class="img-fluid"
-							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
-					<div class="item"><img class="img-fluid"
-							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
-					<div class="item"><img class="img-fluid"
-							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
-					<div class="item"><img class="img-fluid"
-							src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt=""></div>
+				<div class="partner_active owl-carousel owl-theme" id="partner_lkp">
+					<?php foreach ($detail_partner as $detail) { ?>
+						<div class="item">
+							<a href="<?= $detail->link_website_partner; ?>">
+								<img class="img-fluid" src="<?= base_url("assets/frontend/images/landing/partner/$detail->gambar_partner ") ?>" alt="">
+							</a>
+						</div>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

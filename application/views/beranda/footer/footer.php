@@ -11,9 +11,7 @@
 							</a>
 						</div>
 						<p class="footer_description">
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore hic nihil porro
-							repellendus similique corrupti qui corporis, ipsam, impedit eos, atque optio quidem iste
-							nemo maiores tempora odio dolorum. Similique!
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.
 						</p>
 						<div class="socail_links">
 							<ul>
@@ -40,7 +38,7 @@
 				<div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
 					<div class="footer_widget">
 						<h3 class="footer_title">
-							Program Pelatihan
+							Program
 						</h3>
 						<ul>
 							<li><a href="#"> Menjahit Tata Busana</a></li>
@@ -194,6 +192,7 @@
 <script src="<?= base_url('assets/frontend/script/js/mail-script.js') ?>"></script>
 
 <script src="<?= base_url('assets/frontend/script/js/main.js') ?>"></script>
+<script src="<?= base_url('assets/frontend/script/js/app.js') ?>"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
 

@@ -61,21 +61,18 @@
         <div class="row">
             <div class="col-lg-8">
                 <article>
+				<?php foreach ($detail_berita as $detail) { ?>
                     <header class="mb-4">
-                        <h1 class="fw-bolder mb-1">Welcome to Blog Post!</h1>
-                        <div class="text-muted fst-italic mb-2">Selasa, 24 Mei 2021</div>
+                        <h1 class="fw-bolder mb-1"><?= $detail->nama_berita ?></h1>
+                        <div class="text-muted fst-italic mb-2"><?= $detail->tgl_berita ?></div>
                     </header>
                     <figure class="mb-4">
-                        <img src="<?= base_url('assets/') ?>frontend/images/landing/placeholder_image.png" alt="" />
+                        <img src="<?= base_url("assets/frontend/images/landing/berita/$detail->foto_berita") ?>" alt="" />
                     </figure>
-                    
                     <section class="mb-5">
-                        <p class="fs-5 mb-4">
-                            Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.
-                            <br>The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.
-                            <br>you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.
-                        </p>
+                        <p class="fs-5 mb-4"><?= $detail->deskripsi_berita ?></p>
                     </section>
+				<?php } ?>
                 </article>
             </div>
             <!-- Side widgets-->
@@ -85,8 +82,9 @@
                         <h5 class="fw-bolder mb-0">Recent Post</h5>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="">Welcome to Blog Post!</a></li>
-                        <li class="list-group-item"><a href="">Welcome to Blog Post!</a></li>
+					<?php foreach ($all_detail_berita as $detailAll) { ?>
+                        <li class="list-group-item"><a href="<?= base_url("berita/detail/$detail->id_berita") ?>"><?= $detailAll->nama_berita ?></a></li>
+					<?php } ?>
                     </ul>
                 </div>
             </div>
