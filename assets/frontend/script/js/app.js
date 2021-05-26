@@ -39,6 +39,10 @@ $.ajax({
     success: function(data){
         var html = '';
         for(var i=0; i<data.length; i++){
+            if(data[i].deskripsi_berita.length > 420){
+                data[i].deskripsi_berita = data[i].deskripsi_berita.substring(0,420)+'<a href="berita/detail/'+ data[i].id_berita +'">[...]</a>';
+            }
+
             html += '<div class="row blog_details mb-4">'+
                         '<div class="col-md-4">'+
                             '<div class="blog_item_img">'+
