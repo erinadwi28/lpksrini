@@ -1518,6 +1518,7 @@ h3 {
   color: #727272;
   margin-top: 10px;
   margin-bottom: 42px;
+  text-align: justify;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3532,7 +3533,7 @@ label{
 .popular_courses {
   padding-top: 100px;
   padding-bottom: 200px;
-  background: #fff ;
+  background: linear-gradient(#fff 50%, #F5F4F0 100%);
 }
 
 /* line 4, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_popular_courses.scss */
@@ -5286,7 +5287,7 @@ h6 {
   transition: 0.5s;
 }
 .blog_area {
-  background: #fff;
+  background: linear-gradient(#fff 50%, #F5F4F0 100%);
 }
 
 @media (max-width: 576px) {  
@@ -7195,7 +7196,7 @@ h6 {
 
 .gallery{
   padding: 80px 50px 100px 50px;
-  background: #fff;
+  background: linear-gradient(#fff 50%, #F5F4F0 100%);
 }
 
 .gallery img.zoom {
@@ -7244,7 +7245,7 @@ h6 {
 
 /* Partner */
 .partner {
-  background: #fff;
+    background: linear-gradient(#fff 50%, #F5F4F0 100%);
   padding: 30px 0 30px 0;
 
 }
@@ -7259,7 +7260,7 @@ h6 {
 
 /* Struktur */
 .pembimbing {
-  background: #fff;
+  background: linear-gradient(#fff 50%, #F5F4F0 100%);
 }
 
 /* sertifikat lembaga */

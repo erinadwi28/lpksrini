@@ -26,7 +26,7 @@
 					</div>
 					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
 						<div class="log_chat_area d-flex align-items-center">
-							<a href="#test-form" class="login popup-with-form">
+							<a href="#login" class="login popup-with-form">
 								<i class="flaticon-user"></i>
 								<span>Masuk | Daftar</span>
 							</a>
@@ -87,7 +87,7 @@
                                 </table>
                             </div>
                         </center>
-                        <div class="text-right">
+                        <div class="text-right mt-4">
                             <a href="#" class="btn btn-primary">Daftar Sekarang</a>
                         </div>
                     </div>

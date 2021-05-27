@@ -156,7 +156,7 @@
 					</div>
 				</div>
 			</form>
-			<p class="doen_have_acc">Sudah Memiliki Akun ? <a class="daftar dont-hav-acc" href="#test-form">Masuk</a>
+			<p class="doen_have_acc">Sudah Memiliki Akun ? <a class="daftar dont-hav-acc" href="#login">Masuk</a>
 			</p>
 		</div>
 	</div>
