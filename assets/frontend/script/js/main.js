@@ -316,7 +316,7 @@
 		$("#search_input").focus();
 	});
 
-})(jQuery);	
+})(jQuery);
 
 
 
@@ -324,41 +324,44 @@
 
 //-----------Gallery-----------//
 
-$(document).ready(function(){
-  $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-    
-    $(".zoom").hover(function(){
-		
+$(document).ready(function () {
+	$(".fancybox").fancybox({
+		openEffect: "none",
+		closeEffect: "none"
+	});
+
+	$(".zoom").hover(function () {
+
 		$(this).addClass('transition_gallery');
-	}, function(){
-        
+	}, function () {
+
 		$(this).removeClass('transition_gallery');
 	});
 });
 
 // Partner
+$('.partner_active').owlCarousel({
+	loop: true,
+	margin: 20,
+	items: 5,
+	autoplay: true,
+	nav: false,
+	dots: true,
+	autoplayHoverPause: true,
+	autoplaySpeed: 500,
+	responsive: {
+		0: {
+			items: 1
+		},
+		600: {
+			items: 3
+		},
+		1000: {
+			items: 5
+		}
+	}
+});
 
-	$('.partner_active').owlCarousel({
-    loop: true,
-			margin: 20,
-			items: 5,
-			autoplay: true,
-			nav: false,
-			dots: true,
-			autoplayHoverPause: true,
-			autoplaySpeed: 500,
-			responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 5
-        }
-      }
-  });
+
+
+// Validation

@@ -93,78 +93,6 @@
 </footer>
 <!-- footer -->
 
-
-<!-- form itself end-->
-<form id="login" class="white-popup-block mfp-hide">
-	<div class="popup_box ">
-		<div class="popup_inner">
-			<div class="logo text-center">
-				<a href="#">
-					<img src="<?= base_url('assets/frontend/images/landing/logo_rini.png') ?>" alt="">
-				</a>
-			</div>
-			<h3>Masuk ke Akun Anda</h3>
-			<form action="#">
-				<div class="row">
-					<div class="col-xl-12 col-md-12">
-						<label for="email">Email | contoh@gmail.com</label>
-						<input type="email" placeholder="masukkan email disini...">
-					</div>
-					<div class="col-xl-12 col-md-12">
-						<label for="kata_sandi">Kata Sandi</label>
-						<input type="kata_sandi" placeholder="masukkan sandi disini...">
-					</div>
-					<div class="col-xl-12">
-						<button type="submit" class="boxed_btn_orange">Masuk</button>
-					</div>
-				</div>
-			</form>
-			<p class="doen_have_acc">Belum Memiliki Akun ? <a class="daftar dont-hav-acc" href="#daftar">Daftar
-					Sekarang</a>
-			</p>
-		</div>
-	</div>
-</form>
-<!-- form itself end -->
-
-<!-- form itself end-->
-<form id="daftar" class="white-popup-block mfp-hide">
-	<div class="popup_box ">
-		<div class="popup_inner">
-			<div class="logo text-center">
-				<a href="#">
-					<img src="<?= base_url('assets/frontend/images/landing/logo_rini.png') ?>" alt="">
-				</a>
-			</div>
-			<h3>Daftar Akun</h3>
-			<form action="#">
-				<div class="row">
-					<div class="col-xl-12 col-md-12">
-						<label for="nama">Nama Lengkap</label>
-						<input type="nama" placeholder="masukkan nama disini...">
-					</div>
-					<div class="col-xl-12 col-md-12">
-						<label for="email">Email | contoh@gmail.com</label>
-						<input type="email" placeholder="masukkan email disini...">
-					</div>
-					<div class="col-xl-12 col-md-12">
-						<label for="kata_sandi">Kata Sandi</label>
-						<input type="kata_sandi" placeholder="masukkan sandi disini...">
-					</div>
-					<div class="col-xl-12">
-						<button type="submit" class="boxed_btn_orange">Daftar</button>
-					</div>
-				</div>
-			</form>
-			<p class="doen_have_acc">Sudah Memiliki Akun ? <a class="daftar dont-hav-acc" href="#login">Masuk</a>
-			</p>
-		</div>
-	</div>
-</form>
-<!-- form itself end -->
-
-
-<!-- JS here -->
 <script src="<?= base_url('assets/frontend/script/js/vendor/jquery-1.12.4.min.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/popper.min.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/bootstrap.min.js') ?>"></script>
@@ -183,14 +111,12 @@
 <script src="<?= base_url('assets/frontend/script/js/jquery.magnific-popup.min.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/plugins.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/gijgo.min.js') ?>"></script>
-
-<!--contact js-->
 <script src="<?= base_url('assets/frontend/script/js/contact.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/jquery.ajaxchimp.min.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/jquery.form.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/jquery.validate.min.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/mail-script.js') ?>"></script>
-
+<script src="<?= base_url('assets/frontend/libraries/parsley/parsley.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/main.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/script/js/app.js') ?>"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
