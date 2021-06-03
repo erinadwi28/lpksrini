@@ -12,8 +12,8 @@
 
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+				<li <?=$this->uri->segment(1) == 'Dashboard' || $this->uri->segment(1) == '' ? 'class="active"' : '' ?>>
+					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
 				</li>
 				<h3 class="menu-title">Menu</h3><!-- /.menu-title -->
 				<li class="menu-item-has-children dropdown">

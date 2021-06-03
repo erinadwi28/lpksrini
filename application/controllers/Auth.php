@@ -9,6 +9,13 @@ class Auth extends CI_Controller {
     }
 
 	public function index(){   
+
+        if ($this->session->userdata('email') && $this->session->userdata('level') == 1) {
+            redirect('admin');
+		} elseif ($this->session->userdata('email') && $this->session->userdata('level') == 2) {
+            redirect('Dashboard');
+        }
+
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
         $this->form_validation->set_rules('kata_sandi', 'Kata Sandi', 'trim|required');
 
@@ -75,13 +82,13 @@ class Auth extends CI_Controller {
 
     public function daftar() {
         $this->form_validation->set_rules('nama', 'Nama', 'trim|required');
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[pengguna.email]');
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
+        // $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[pengguna.email]');
         $this->form_validation->set_rules('kata_sandi', 'Kata Sandi', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-
-            $errors = validation_errors();
-            $this->session->set_flashdata('error', $errors);
+            // $errors = validation_errors();
+            // $this->session->set_flashdata('error', $errors);
 
             $data_title['title'] = 'Daftar Akun';
 
@@ -89,7 +96,16 @@ class Auth extends CI_Controller {
             $this->load->view('dashboard/daftar');
             $this->load->view('dashboard/footer/footer');
         } else {
-            $data = [
+            $data_email = $this->input->post('email');
+
+            $sql = $this->db->query("SELECT email FROM pengguna where email='$data_email'");
+            $cek_email = $sql->num_rows();
+
+            if ($cek_email > 0) {
+                $this->session->set_flashdata('error', 'Email sudah terdaftar');
+                redirect('auth/daftar');
+            } else {
+                $data = [
                 'nama' => htmlspecialchars($this->input->post('nama', true)),
                 'email' => htmlspecialchars($this->input->post('email', true)),
                 'foto_profil' => 'placeholder_profil.png',
@@ -104,6 +120,7 @@ class Auth extends CI_Controller {
             $this->m_auth->daftar_akun($data);
             $this->session->set_flashdata('success', 'Akun berhasil dibuat, silahkan masuk');
             redirect('auth');
+            }
         }
         
     }
