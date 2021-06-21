@@ -23,8 +23,8 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Pelatihan Saya</a>
 					<ul class="sub-menu children dropdown-menu">
-						<li><a href="#" class="dropdown-toggle"> <i class="fa fa-hand-o-right"></i> Pelatihan Aktif</a></li>
-						<li><a href="#"><i class="fa fa-hand-o-right"></i> Cetak Sertifikat</a></li>
+						<li><a href="#" class="dropdown-toggle"> <i class="fa fa-check"></i> Pelatihan Aktif</a></li>
+						<li><a href="#"><i class="fa fa-print"></i> Cetak Sertifikat</a></li>
 					</ul>
 				</li>
 				<li>
