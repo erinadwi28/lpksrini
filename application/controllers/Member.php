@@ -21,6 +21,7 @@ class Member extends CI_Controller {
 
         $this->load->view('dashboard/header/header', $data_title);
         $this->load->view('dashboard/member/index',$data);
+        $this->load->view('dashboard/member/dashboard');
         $this->load->view('dashboard/footer/footer');
 	
         } else{

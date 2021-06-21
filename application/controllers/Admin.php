@@ -20,6 +20,7 @@ class Admin extends CI_Controller {
 
         $this->load->view('dashboard/header/header', $data_title);
         $this->load->view('dashboard/admin/index',$data);
+        $this->load->view('dashboard/admin/dashboard',$data);
         $this->load->view('dashboard/footer/footer');
 	
         } else{

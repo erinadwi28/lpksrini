@@ -16,13 +16,19 @@
 					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
 				</li>
 				<h3 class="menu-title">Menu</h3><!-- /.menu-title -->
+				<li>
+					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-files-o"></i>Katalog </a>
+				</li>
 				<li class="menu-item-has-children dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>
+						aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Pelatihan Saya</a>
 					<ul class="sub-menu children dropdown-menu">
-						<li><a href="#" class="dropdown-toggle"> <i class="fa fa-hand-o-right"></i> menu 1</a></li>
-						<li><a href="#"><i class="fa fa-hand-o-right"></i> menu 2</a></li>
+						<li><a href="#" class="dropdown-toggle"> <i class="fa fa-hand-o-right"></i> Pelatihan Aktif</a></li>
+						<li><a href="#"><i class="fa fa-hand-o-right"></i> Cetak Sertifikat</a></li>
 					</ul>
+				</li>
+				<li>
+					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-comment-o"></i>Testimoni </a>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
@@ -68,95 +74,3 @@
 	</header>
 	<!-- Header-->
 
-	<div class="breadcrumbs">
-		<div class="col-sm-4">
-			<div class="page-header float-left">
-				<div class="page-title">
-					<h1>Dashboard</h1>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-8">
-			<div class="page-header float-right">
-				<div class="page-title">
-					<ol class="breadcrumb text-right">
-						<li class="active">Dashboard</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="content mt-3">
-		<div class="col-sm-6 col-lg-3">
-			<div class="card text-white bg-flat-color-1">
-				<div class="card-body pb-0">
-					<div class="float-right">
-						<a href="">
-                            <div class="search"><i class="fa fa-search"></i></div>
-                        </a>
-					</div>
-					<h4 class="mb-0">
-						<span class="count">10</span>
-					</h4>
-					<p class="text-light">Members online</p>
-				</div>
-			</div>
-		</div>
-		<!--/.col-->
-		<div class="col-sm-6 col-lg-3">
-			<div class="card text-white bg-flat-color-1">
-				<div class="card-body pb-0">
-					<div class="float-right">
-						<a href="">
-                            <div class="search"><i class="fa fa-search"></i></div>
-                        </a>
-						
-					</div>
-					<h4 class="mb-0">
-						<span class="count">10</span>
-					</h4>
-					<p class="text-light">Members online</p>
-				</div>
-			</div>
-		</div>
-		<!--/.col-->
-		<div class="col-sm-6 col-lg-3">
-			<div class="card text-white bg-flat-color-1">
-				<div class="card-body pb-0">
-					<div class="float-right">
-						<a href="">
-                            <div class="search"><i class="fa fa-search"></i></div>
-                        </a>
-						
-					</div>
-					<h4 class="mb-0">
-						<span class="count">10</span>
-					</h4>
-					<p class="text-light">Members online</p>
-				</div>
-			</div>
-		</div>
-		<!--/.col-->
-		<div class="col-sm-6 col-lg-3">
-			<div class="card text-white bg-flat-color-1">
-				<div class="card-body pb-0">
-					<div class="float-right">
-						<a href="">
-                            <div class="search"><i class="fa fa-search"></i></div>
-                        </a>
-						
-					</div>
-					<h4 class="mb-0">
-						<span class="count">10</span>
-					</h4>
-					<p class="text-light">Members online</p>
-				</div>
-			</div>
-		</div>
-		<!--/.col-->
-
-		
-	</div> <!-- .content -->
-</div>
-<!-- Right Panel -->

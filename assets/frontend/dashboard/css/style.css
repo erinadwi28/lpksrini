@@ -5224,6 +5224,10 @@
 	background: #4dbd74;
 }
 
+.bg-flat-color-6 {
+	background: #c9cbd369;
+}
+
 .transition {
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
@@ -5258,7 +5262,7 @@ a,
 button {
 	text-decoration: none;
 	outline: none !important;
-	color: #fff;
+	color: #212529;
 	-webkit-transition: all 0.25s ease;
 	transition: all 0.25s ease;
 }
@@ -5266,7 +5270,7 @@ button {
 a:focus,
 a:hover {
 	text-decoration: none;
-	color: #000;
+	color: #e74c3c;
 }
 
 h1,
@@ -6081,7 +6085,8 @@ header .form-inline .search-form.close {
 .card {
 	margin-bottom: 24px;
 	margin-bottom: 1.5rem;
-	border-radius: 0;
+	border-radius: 8px;
+	border: 0px;
 }
 
 .card h4 {
@@ -7310,3 +7315,6 @@ header .form-inline .search-form.close {
     cursor: pointer;
 }
 
+.progress {
+	background-color: rgba(253, 250, 250, 0.829);
+}
