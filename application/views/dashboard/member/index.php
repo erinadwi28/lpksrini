@@ -16,14 +16,13 @@
 					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
 				</li>
 				<h3 class="menu-title">Menu</h3><!-- /.menu-title -->
-				<li class="menu-item-has-children dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Components</a>
-					<ul class="sub-menu children dropdown-menu">
-						<li><a href="#" class="dropdown-toggle"> <i class="fa fa-hand-o-right"></i> menu 1</a></li>
-						<li><a href="#"><i class="fa fa-hand-o-right"></i> menu 2</a></li>
-					</ul>
+				<li>
+					<a href="#"> <i class="menu-icon fa fa-th"></i>Program </a>
 				</li>
+				<li>
+					<a href="#"> <i class="menu-icon fa fa-id-badge"></i>Sertivikat </a>
+				</li>
+				
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
