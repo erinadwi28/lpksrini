@@ -52,13 +52,14 @@
 							<span class="count bg-danger">5</span>
 						</button>
 					</div>
-                    &nbsp; <span>| &nbsp;</span> <i class="fa fa-calendar top-info-date"></i>&nbsp; <span id="top-info-date" class="top-info-date"></span> <span class="top-info-date">&nbsp; | &nbsp;</span><span class="mb-0 ">Halo <?= $pengguna['nama']; ?> !</span> 
+                    &nbsp; <span>| &nbsp;</span> <i class="fa fa-calendar top-info-date"></i>&nbsp; <span id="top-info-date" class="top-info-date"></span>
 
 				</div>
 			</div>
 
 			<div class="col-sm-5">
 				<div class="user-area dropdown float-right">
+					<span class="username">Halo <?= $pengguna['nama']; ?> !</span>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">
 						<img class="user-avatar rounded-circle" src="<?= base_url('assets/backend/images/member/foto_profil/') . $pengguna['foto_profil']; ?>" alt="User Avatar">

@@ -7282,9 +7282,9 @@ header .form-inline .search-form.close {
 		padding: 5px;
 	}
 
-	.top-info-date {
+	/* .top-info-date {
     display: none;
-  }
+  } */
 }
 
 /* masuk, daftar */
@@ -7647,4 +7647,10 @@ header .form-inline .search-form.close {
     border: 0;
     font-weight: 500;
     transition: all .4s;
+}
+
+/* Topbar */
+.username {
+	vertical-align: middle;
+	margin-right: 15px;
 }
