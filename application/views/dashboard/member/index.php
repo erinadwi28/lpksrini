@@ -12,12 +12,12 @@
 
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li <?=$this->uri->segment(1) == 'Dashboard' || $this->uri->segment(1) == '' ? 'class="active"' : '' ?>>
-					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+				<li <?=$this->uri->segment(1) == 'dashboard' || $this->uri->segment(1) == '' ? 'class="active"' : '' ?>>
+					<a href="<?= base_url('dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
 				</li>
 				<h3 class="menu-title">Menu</h3><!-- /.menu-title -->
-				<li>
-					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-files-o"></i>Katalog </a>
+				<li <?=$this->uri->segment(1) == 'katalog' || $this->uri->segment(1) == 'detail-katalog' ? 'class="active"' : '' ?>>
+					<a href="<?= base_url('katalog') ?>"> <i class="menu-icon fa fa-files-o"></i>Katalog </a>
 				</li>
 				<li class="menu-item-has-children dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"

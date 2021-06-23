@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/frontend/libraries/parsley/parsley.css') ?>">
 
     <link rel="stylesheet" href="<?= base_url('assets/frontend/dashboard') ?>/css/style.css">
+    
 
     <!-- icon -->
     <link rel="shortcut icon" type="images/x-icon" href="<?= base_url('assets/frontend/images/landing/logo_title.png') ?>">

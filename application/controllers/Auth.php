@@ -13,7 +13,7 @@ class Auth extends CI_Controller {
         if ($this->session->userdata('email') && $this->session->userdata('level') == 1) {
             redirect('admin');
 		} elseif ($this->session->userdata('email') && $this->session->userdata('level') == 2) {
-            redirect('Dashboard');
+            redirect('dashboard');
         }
 
         $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
@@ -53,7 +53,7 @@ class Auth extends CI_Controller {
                     if ($pengguna['level'] == 1) {
                         redirect('Admin');
                     } elseif ($pengguna['level'] == 2){
-                        redirect('Dashboard');
+                        redirect('dashboard');
                     }
                         
                 } else {
