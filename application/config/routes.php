@@ -57,3 +57,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['dashboard'] = 'Member/index';
 $route['katalog'] = 'Member/katalog';
 $route['detail-katalog'] = 'Member/detail_katalog';
+$route['testimoni'] = 'Member/testimoni';

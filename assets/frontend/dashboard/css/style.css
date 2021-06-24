@@ -7654,3 +7654,8 @@ header .form-inline .search-form.close {
 	vertical-align: middle;
 	margin-right: 15px;
 }
+
+/* Testimoni */
+textarea.testimoni {
+	height: 150px;
+}

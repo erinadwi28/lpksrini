@@ -27,8 +27,8 @@
 						<li><a href="#"><i class="fa fa-print"></i> Cetak Sertifikat</a></li>
 					</ul>
 				</li>
-				<li>
-					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-comment-o"></i>Testimoni </a>
+				<li <?=$this->uri->segment(1) == 'testimoni' ? 'class="active"' : '' ?>>
+					<a href="<?= base_url('testimoni') ?>"> <i class="menu-icon fa fa-comment-o"></i>Testimoni </a>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->

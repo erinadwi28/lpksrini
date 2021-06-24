@@ -84,8 +84,8 @@
 						<!-- transfer -->
 						<h6 class="mb-2 mt-3">Transfer Pembayaran</h6>
 						<img class="bank" src="<?= base_url('assets/frontend/dashboard/images/bank.png') ?>" alt="">
-						<p class="mt-1">atas nama Erina Dwi Utami <br>
-							<b>123456789</b>
+						<p class="mt-1">atas nama LPKS RINI <br>
+							<b>1050848169</b>
 						</p>
 
 						<!-- button confirm -->
@@ -104,7 +104,7 @@
 					</div>
 					<div class="card-body">
 						<!-- info -->
-						<p>Proses konfirmasi pembayaran kelas akan membutuhkan waktu sekitar 30 menit (dari pesan WhatsApp dikirim). Mohon menunggu dengan sabar dan terima kasih.</p>
+						<p>Proses konfirmasi pembayaran pelatihan akan membutuhkan waktu sekitar 30 menit (dari pesan WhatsApp dikirim). Mohon menunggu dengan sabar dan terima kasih.</p>
 						
 					</div>
 				</div>

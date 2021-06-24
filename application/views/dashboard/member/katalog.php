@@ -11,7 +11,7 @@
 		<div class="page-header float-right">
 			<div class="page-title">
 				<ol class="breadcrumb text-right">
-					<li class="active">Katalog</li>
+					<li class="active text-muted">Katalog</li>
 				</ol>
 			</div>
 		</div>
