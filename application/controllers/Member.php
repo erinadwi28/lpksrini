@@ -19,9 +19,10 @@ class Member extends CI_Controller {
 
                 $data_title['title'] = 'Dashboard';
 
-                $this->load->view('dashboard/header/header', $data_title);
-                $this->load->view('dashboard/member/index',$data);
-                $this->load->view('dashboard/footer/footer');
+        $this->load->view('dashboard/header/header', $data_title);
+        $this->load->view('dashboard/member/topbar',$data);
+        $this->load->view('dashboard/member/dashboard');
+        $this->load->view('dashboard/footer/footer');
 	
         } else{
                 echo "Anda tidak berhak mengakses halaman ini";
