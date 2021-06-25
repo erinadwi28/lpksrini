@@ -15,17 +15,71 @@ class Member extends CI_Controller {
                 
         if($this->session->userdata('level') =='2'){
         
-                $data['pengguna'] = $this->db->get_where('pengguna', ['email' => $this->session->userdata('email')])->row_array();
+        $data['pengguna'] = $this->db->get_where('pengguna', ['email' => $this->session->userdata('email')])->row_array();
 
                 $data_title['title'] = 'Dashboard';
 
         $this->load->view('dashboard/header/header', $data_title);
-        $this->load->view('dashboard/member/topbar',$data);
+        $this->load->view('dashboard/member/index',$data);
         $this->load->view('dashboard/member/dashboard');
         $this->load->view('dashboard/footer/footer');
 	
         } else{
                 echo "Anda tidak berhak mengakses halaman ini";
         }
-}
+        }
+
+        public function katalog(){ 
+                
+        if($this->session->userdata('level') =='2'){
+        
+        $data['pengguna'] = $this->db->get_where('pengguna', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data_title['title'] = 'Katalog';
+
+        $this->load->view('dashboard/header/header', $data_title);
+        $this->load->view('dashboard/member/index',$data);
+        $this->load->view('dashboard/member/katalog');
+        $this->load->view('dashboard/footer/footer');
+	
+        } else{
+                echo "Anda tidak berhak mengakses halaman ini";
+        }
+        }
+
+        public function pelatihan_aktif(){ 
+                
+        if($this->session->userdata('level') =='2'){
+        
+        $data['pengguna'] = $this->db->get_where('pengguna', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data_title['title'] = 'Pelatihan Aktif';
+
+        $this->load->view('dashboard/header/header', $data_title);
+        $this->load->view('dashboard/member/index',$data);
+        $this->load->view('dashboard/member/pelatihan_aktif');
+        $this->load->view('dashboard/footer/footer');
+        
+        } else{
+                echo "Anda tidak berhak mengakses halaman ini";
+        }
+        }
+
+        public function testimoni(){ 
+                
+        if($this->session->userdata('level') =='2'){
+        
+        $data['pengguna'] = $this->db->get_where('pengguna', ['email' => $this->session->userdata('email')])->row_array();
+
+        $data_title['title'] = 'Testimoni';
+
+        $this->load->view('dashboard/header/header', $data_title);
+        $this->load->view('dashboard/member/index',$data);
+        $this->load->view('dashboard/member/testimoni');
+        $this->load->view('dashboard/footer/footer');
+	
+        } else{
+                echo "Anda tidak berhak mengakses halaman ini";
+        }
+        }
 }

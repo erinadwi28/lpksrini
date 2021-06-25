@@ -15,10 +15,15 @@
     <link rel="stylesheet" href="<?= base_url('assets/frontend/libraries/parsley/parsley.css') ?>">
 
     <link rel="stylesheet" href="<?= base_url('assets/frontend/dashboard') ?>/css/style.css">
+    
 
     <!-- icon -->
     <link rel="shortcut icon" type="images/x-icon" href="<?= base_url('assets/frontend/images/landing/logo_title.png') ?>">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css' rel='stylesheet' type='text/css'>
+    <link href='https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap4.min.css' rel='stylesheet' type='text/css'>
+
+
 </head>
 <body>

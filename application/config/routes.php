@@ -54,4 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // url
-$route['Dashboard'] = 'Member';
+$route['dashboard'] = 'Member/index';
+$route['katalog'] = 'Member/katalog';
+$route['detail-katalog'] = 'Member/detail_katalog';
+$route['testimoni'] = 'Member/testimoni';

@@ -63,3 +63,4 @@ $.ajax({
         $('#berita').html(html);
     }
 });
+

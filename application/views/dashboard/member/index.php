@@ -12,12 +12,12 @@
 
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li <?=$this->uri->segment(1) == 'Dashboard' || $this->uri->segment(1) == '' ? 'class="active"' : '' ?>>
-					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+				<li <?=$this->uri->segment(1) == 'dashboard' || $this->uri->segment(1) == '' ? 'class="active"' : '' ?>>
+					<a href="<?= base_url('dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
 				</li>
 				<h3 class="menu-title">Menu</h3><!-- /.menu-title -->
-				<li>
-					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-files-o"></i>Katalog </a>
+				<li <?=$this->uri->segment(1) == 'katalog' || $this->uri->segment(1) == 'detail-katalog' ? 'class="active"' : '' ?>>
+					<a href="<?= base_url('katalog') ?>"> <i class="menu-icon fa fa-files-o"></i>Katalog </a>
 				</li>
 				<li class="menu-item-has-children dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -27,8 +27,8 @@
 						<li><a href="#"><i class="fa fa-print"></i> Cetak Sertifikat</a></li>
 					</ul>
 				</li>
-				<li>
-					<a href="<?= base_url('Dashboard') ?>"> <i class="menu-icon fa fa-comment-o"></i>Testimoni </a>
+				<li <?=$this->uri->segment(1) == 'testimoni' ? 'class="active"' : '' ?>>
+					<a href="<?= base_url('testimoni') ?>"> <i class="menu-icon fa fa-comment-o"></i>Testimoni </a>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
@@ -52,13 +52,14 @@
 							<span class="count bg-danger">5</span>
 						</button>
 					</div>
-                    &nbsp; <span>| &nbsp;</span> <i class="fa fa-calendar top-info-date"></i>&nbsp; <span id="top-info-date" class="top-info-date"></span> <span class="top-info-date">&nbsp; | &nbsp;</span><span class="mb-0 ">Halo <?= $pengguna['nama']; ?> !</span> 
+                    &nbsp; <span>| &nbsp;</span> <i class="fa fa-calendar top-info-date"></i>&nbsp; <span id="top-info-date" class="top-info-date"></span>
 
 				</div>
 			</div>
 
 			<div class="col-sm-5">
 				<div class="user-area dropdown float-right">
+					<span class="username">Halo <?= $pengguna['nama']; ?> !</span>
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">
 						<img class="user-avatar rounded-circle" src="<?= base_url('assets/backend/images/member/foto_profil/') . $pengguna['foto_profil']; ?>" alt="User Avatar">
