@@ -17,9 +17,12 @@
 		</div>
 	</div>
 </div>
+<div class="progress">
+	<div class="progress-bar" role="progressbar" style="width:5%; hight:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 <!-- detail_berita_start -->
 <div class="isi_berita">
-	<div class="container mt-1 p-4">
+		<div class="container mt-4" style="padding-right:30px; padding-left:30px;">
 		<div class="row">
             <!-- Picture -->
 			<div class="col-lg-6">
@@ -31,7 +34,7 @@
 
             <!-- Form Testimoni -->
 			<div class="col-lg-6">
-				<div class="card mb-4 border-0 shadow">
+				<div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
 					<div class="card-body ">
 						<div class="form-group mt-2">
                         <label for="testimoni" class=" form-control-label">Bagaimana penilaian Anda terhadap pelatihan di LPKS RINI ? Yuk berikan kesan dan pesanmu agar kami lebih baik kedepannya.</label>
@@ -50,3 +53,5 @@
 	</div>
 </div>
 <!-- detail_berita_end -->
+
+</div>

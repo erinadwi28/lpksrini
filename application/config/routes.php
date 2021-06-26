@@ -58,3 +58,7 @@ $route['dashboard'] = 'Member/index';
 $route['katalog'] = 'Member/katalog';
 $route['detail-katalog'] = 'Member/detail_katalog';
 $route['testimoni'] = 'Member/testimoni';
+$route['pelatihan-aktif'] = 'Member/pelatihan_aktif';
+$route['kurikulum'] = 'Member/kurikulum';
+$route['kelas'] = 'Member/kelas';
+$route['sertifikat'] = 'Member/sertifikat';

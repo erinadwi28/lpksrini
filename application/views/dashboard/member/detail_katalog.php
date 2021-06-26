@@ -18,10 +18,21 @@
 		</div>
 	</div>
 </div>
+<div class="progress">
+	<div class="progress-bar" role="progressbar" style="width:10%; hight:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 <!-- detail_berita_start -->
 <div class="isi_berita">
-	<div class="container mt-1 p-4">
+	<div class="container mt-1" style="padding:30px;">
 		<div class="row">
+			<div class="col-sm-12">
+                <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                    <span class="badge badge-pill badge-success">Success</span> &nbsp; Anda sudah melakukan pembelian pelatihan ini.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
 			<div class="col-lg-7">
 				<article>
 					<header class="mb-4">
@@ -46,7 +57,7 @@
 			</div>
 			<!-- Side widgets-->
 			<div class="col-lg-5">
-				<div class="card mb-4 border-0">
+				<div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
 					<div class="card-header">
 						<h5 class="fw-bolder mb-0 text-center">Gabung Sekarang</h5>
 					</div>
@@ -81,24 +92,31 @@
 							</tr>
 						</table>
 
-						<!-- transfer -->
-						<h6 class="mb-2 mt-3">Transfer Pembayaran</h6>
-						<img class="bank" src="<?= base_url('assets/frontend/dashboard/images/bank.png') ?>" alt="">
-						<p class="mt-1">atas nama LPKS RINI <br>
-							<b>1050848169</b>
-						</p>
-
-						<!-- button confirm -->
-						<div class="text-center mt-3 mb-3">
-							<a class="btn btn-primary btn-confirmation"
-								href="https://api.whatsapp.com/send?phone=6285713609299&text=Halo,%20Saya%20sudah%20melakukan%20pembayaran%20pelatihan.%20Berikut%20saya%20lampirkan%20foto%20bukti%20pembayaran:">Konfirmasi
-								Pembayaran</a>
+						<div>
+							<div class="text-center mt-3 mb-3">
+								<a class="btn btn-primary btn-buy"
+									href="">Beli Pelatihan</a>
+							</div>
 						</div>
+
+						<div>
+							<!-- transfer -->
+							<h6 class="mb-2 mt-3">Transfer Pembayaran</h6>
+							<img class="bank" src="<?= base_url('assets/frontend/dashboard/images/bank.png') ?>" alt="">
+							<p class="mt-1">atas nama LPKS RINI<br><b>1050848169</b></p>
+							<!-- button confirm -->
+							<div class="text-center mt-3 mb-3">
+								<a class="btn btn-primary btn-confirmation"
+									href="https://api.whatsapp.com/send?phone=6285713609299&text=Halo,%20Saya%20sudah%20melakukan%20pembayaran%20pelatihan.%20Berikut%20saya%20lampirkan%20foto%20bukti%20pembayaran:">Konfirmasi
+									Pembayaran</a>
+							</div>
+						</div>
+						
 
 
 					</div>
 				</div>
-                <div class="card mb-4 border-0">
+                <div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
 					<div class="card-header">
 						<h5 class="fw-bolder mb-0 text-center">Informasi Penting</h5>
 					</div>
@@ -113,3 +131,5 @@
 	</div>
 </div>
 <!-- detail_berita_end -->
+
+</div>

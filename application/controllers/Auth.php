@@ -10,9 +10,9 @@ class Auth extends CI_Controller {
 
 	public function index(){   
 
-        if ($this->session->userdata('email') && $this->session->userdata('level') == 1) {
+        if ($this->session->userdata('email') && $this->session->userdata('id_level') == 1) {
             redirect('admin');
-		} elseif ($this->session->userdata('email') && $this->session->userdata('level') == 2) {
+		} elseif ($this->session->userdata('email') && $this->session->userdata('id_level') == 2) {
             redirect('dashboard');
         }
 
@@ -46,13 +46,13 @@ class Auth extends CI_Controller {
                 if (password_verify($kata_sandi, $pengguna['kata_sandi'])){
                     $data = [
                     'email' => $pengguna['email'],
-                    'level' => $pengguna['level'],
+                    'id_level' => $pengguna['id_level'],
                     ];
 
                     $this->session->set_userdata($data);
-                    if ($pengguna['level'] == 1) {
+                    if ($pengguna['id_level'] == 1) {
                         redirect('Admin');
-                    } elseif ($pengguna['level'] == 2){
+                    } elseif ($pengguna['id_level'] == 2){
                         redirect('dashboard');
                     }
                         
@@ -74,7 +74,7 @@ class Auth extends CI_Controller {
     public function keluar()
     {
         $this->session->unset_userdata('email');
-        $this->session->unset_userdata('level');
+        $this->session->unset_userdata('id_level');
 
         $this->session->set_flashdata('success', 'Berhasil keluar dari akun Anda');
         redirect('auth');
@@ -110,7 +110,7 @@ class Auth extends CI_Controller {
                 'email' => htmlspecialchars($this->input->post('email', true)),
                 'foto_profil' => 'placeholder_profil.png',
                 'kata_sandi' => password_hash($this->input->post('kata_sandi'), PASSWORD_DEFAULT),
-                'level'=> 2,
+                'id_level'=> 2,
                 'status_aktif' => 1,
                 'dibuat' => date("Y-m-d H:i:s")
             ];

@@ -2800,6 +2800,26 @@ label{
   z-index: 0;
 }
 
+@media (max-width: 576px) {
+	.our_courses .single_course {
+    margin: -10px 0 30px 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.our_courses .single_course {
+    margin: -10px 0 30px 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.our_courses .single_course {
+    margin: -10px 0 30px 0;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.our_courses .single_course {
+    margin: -10px 0 30px 0;
+  }
+}
 .our_courses .single_course .icon img {
   width: 80px;
   height: 80px;
@@ -3270,7 +3290,7 @@ label{
 
   /* line 75, C:/Users/SPN Graphics/Desktop/CL September/Edu mark/207 Education/HTML/scss/_course_details.scss */
   .courses_details_info {
-    padding: 50px 0 50px 0;
+    padding: 70px 0 50px 0;
   }
 }
 
@@ -7024,7 +7044,6 @@ h6 {
   border-radius: 5px;
 }
 
-
 .program_pelatihan .card img{
   border-radius: 5px 5px 0 0;
   height: 400px;
@@ -7270,19 +7289,20 @@ h6 {
 }
 
 /*--------------------Detail Berita--------------------*/
-.isi_berita{
+.isi_berita .materi{
   margin: -20px 0 70px 0;
 }
 
-.isi_berita img{
+.isi_berita .materi img{
   height: 300px;
   width: 100%;
 }
 
-.isi_berita .card{
+.isi_berita .materi .card{
   box-shadow: 0px 10px 20px 0px rgba(167, 164, 164, 0.3);
   border-radius: 5px;
 }
+
 
 /* Lihat Password */
 .field-icon {
@@ -7292,4 +7312,10 @@ h6 {
     margin-top: -52px;
     position: relative;
     z-index: 2;
+}
+
+
+.isi_berita img{
+  height: 300px;
+  width: 100%;
 }

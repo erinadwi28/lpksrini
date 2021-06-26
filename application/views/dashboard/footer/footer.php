@@ -1,3 +1,4 @@
+
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/jquery/dist/jquery.min.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/popper.js/dist/umd/popper.min.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/bootstrap/dist/js/bootstrap.min.js"></script>

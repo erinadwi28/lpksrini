@@ -18,10 +18,13 @@
 	</div>
 </div>
 
+<div class="progress">
+	<div class="progress-bar" role="progressbar" style="width:5%; hight:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
 <!-- courses -->
 <div class="popular_courses">
 	<div class="all_courses">
-		<div class="container">
+		<div class="container mt-1" style="padding-right:30px; padding-left:30px;">
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 					<div class="row">
@@ -85,3 +88,5 @@
 	</div>
 </div>
 <!-- courses-->
+
+</div>

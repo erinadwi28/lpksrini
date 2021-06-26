@@ -6,7 +6,7 @@
 					<img class="align-content" src="<?= base_url('assets/frontend/images/landing/logo_rini.png') ?>" alt="">
 				</a>
 			</div>
-			<div class="login-form">
+			<div class="login-form" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
 				<?php if ($this->session->flashdata('success')) { ?>
                             <div class="alert alert-success alert-dismissible fade show" role="alert">
                                 <?= $this->session->flashdata('success') ?>
@@ -46,7 +46,7 @@
 					<button type="submit" class="btn btn-masuk btn-flat mt-4">Daftar</button>
 					
 					<div class="register-link mt-4 text-center">
-						<p>Sudah Memiliki Akun ? <a href="<?= base_url('auth') ?>"> Masuk</a></p>
+						<p>Sudah Memiliki Akun? <a href="<?= base_url('auth') ?>"> Masuk</a></p>
 					</div>
 
 					<div class="register-link mt-2 text-center">

@@ -1,11 +1,4 @@
-console.log("Hallo"); 
-
 (function ($) {
-    //    "use strict";
-
-
-    /*  Data Table
-    -------------*/
 
     $('#table_pelatihan').DataTable({
         // "ajax": {
@@ -26,7 +19,6 @@ console.log("Hallo");
             search: '<i class="fa fa-search"></i>',
             searchPlaceholder: "search",
         },
-        dom: '<"toolbardate_report"><Bfrtip><"bottom mb-4 text-center"l> ',
         buttons: [],
         initComplete: function () {
             
