@@ -4,8 +4,13 @@ class M_member extends CI_Model {
 
     public function pengguna(){
         return $this->db->get_where('pengguna', ['email' => $this->session->userdata('email')])->row_array();
-    }
+    } 
 
+    public function update_profil($id,$data){
+        $this->db->where('id_pengguna', $id);
+        $this->db->update('pengguna', $data); 
+    } 
+    
     public function get_progres($id_pengguna){
         $query = $this->db->select('*')
         ->from('progres_belajar')

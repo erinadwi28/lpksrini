@@ -45,22 +45,15 @@
 	<!-- Header-->
 	<header id="header" class="header">
 		<div class="header-menu">
-			<div class="col-sm-7">
-				<a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
-				<div class="header-left">	
-					<!-- <div class="dropdown for-notification">
-						<button class="btn btn-secondary dropdown-toggle" type="button" id="notification"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fa fa-bell"></i>
-							<span class="count bg-danger">5</span>
-						</button>
-					</div>
-                    &nbsp; <span>| &nbsp;</span>  -->
-					<i class="fa fa-calendar top-info-date" style="padding-top:8px;"></i>&nbsp; <span id="top-info-date" class="top-info-date"></span>
+			<div class="top_tanggal">
+				<div class="col-sm-7">
+					<a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+					<div class="header-left">	
+						<i class="fa fa-calendar top-info-date" style="padding-top:8px;"></i>&nbsp; <span id="top-info-date" class="top-info-date"></span>
 
+					</div>
 				</div>
 			</div>
-
 			<div class="col-sm-5">
 				<div class="user-area dropdown float-right">
 					<span class="username">Halo <?= $pengguna['nama']; ?> !</span>
@@ -70,7 +63,7 @@
 					</a>
 
 					<div class="user-menu dropdown-menu">
-						<a class="nav-link" href="#"><i class="fa fa-user"></i> Profil Saya</a>
+						<a class="nav-link" href="<?= base_url('detail-profil') ?>"><i class="fa fa-user"></i> Profil Saya</a>
 						<a class="nav-link" href="<?= base_url('auth/keluar') ?>"><i class="fa fa-power-off"></i> Keluar</a>
 					</div>
 				</div>

@@ -32,6 +32,10 @@
 						<label>Email</label>
 						<input type="email" name="email" class="form-control" placeholder="contoh@email.com" value="<?= set_value('email') ?>" required>
 					</div>
+                    <div class="form-group">
+						<label>No Hp</label>
+						<input type="text" name="no_hp" class="form-control" placeholder="masukkan no hp disini..." value="<?= set_value('no_hp') ?>" required>
+					</div>
 					<div class="form-group">
 						<label>Kata Sandi</label>
 						<span toggle="#password-field" class="fa fa-fw fa-eye fa-eye field-icon toggle-password"></span>

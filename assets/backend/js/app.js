@@ -51,6 +51,7 @@
     });
 
     $("#kelas").parsley();
+    $("#ubah_profil").parsley();
 })(jQuery);
 
 

@@ -27,6 +27,36 @@ class Member extends CI_Controller {
 			echo "Anda tidak berhak mengakses halaman ini";
 		}
 	}
+	
+	public function detail_profil(){ 
+		if($this->session->userdata('id_level') =='2'){
+			$data['pengguna'] = $this->m_member->pengguna();
+			$data_title['title'] = 'Profil';
+			$this->load->view('dashboard/header/header', $data_title);
+			$this->load->view('dashboard/member/index',$data);
+			$this->load->view('dashboard/member/detail_profil',$data);
+			$this->load->view('dashboard/footer/footer');
+		} else{
+			echo "Anda tidak berhak mengakses halaman ini";
+		}
+	}
+	
+	public function aksi_ubah_profil(){ 
+		if($this->session->userdata('id_level') =='2'){
+			$pengguna = $this->m_member->pengguna(); 
+            
+            $data = [
+				'nama' => $this->input->post('nama'),
+				'email' => $this->input->post('email'),
+				'alamat' => $this->input->post('alamat'),
+				'no_hp' => $this->input->post('no_hp'),
+			];
+
+            $this->m_member->update_profil($pengguna['id_pengguna'],$data);
+            $this->session->set_flashdata('success', 'disimpan');
+            redirect('detail-profil');
+		}
+	}
 
 	public function katalog(){ 
 		if($this->session->userdata('id_level') =='2'){
