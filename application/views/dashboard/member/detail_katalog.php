@@ -168,7 +168,7 @@
 					</div>
 					<div class="card-body">
 						<!-- info -->
-						<p>Selesaikan pembelajaran Anda dan dapatkan sertifikat pelatihannya.</p>
+						<p>Selesaikan pembelajaran Anda di menu <a style="color: #e74c3c;" href="<?= base_url('pelatihan-aktif') ?>">Pelatihan Saya</a>  dan dapatkan sertifikat pelatihannya.</p>
 					</div>
 				</div>
 			</div>
