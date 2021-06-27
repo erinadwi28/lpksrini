@@ -42,6 +42,10 @@
 						<span toggle="#password-field-confirmation" class="fa fa-fw fa-eye field-icon-2 toggle-password-2"></span>
 						<input type="password" name="kata_sandi_ulang" class="form-control" id="#password-field-confirmation" placeholder="masukkan kata sandi disini..." required minlength="6" data-parsley-equalto="#password-field">
 					</div>
+                    <div class="form-group">
+						<label>Alamat</label>
+						<input type="text" name="alamat" class="form-control" placeholder="masukkan alamat disini..." value="<?= set_value('alamat') ?>" required>
+					</div>
 					
 					<button type="submit" class="btn btn-masuk btn-flat mt-4">Daftar</button>
 					

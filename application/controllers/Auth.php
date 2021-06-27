@@ -110,14 +110,20 @@ class Auth extends CI_Controller {
                 'email' => htmlspecialchars($this->input->post('email', true)),
                 'foto_profil' => 'placeholder_profil.png',
                 'kata_sandi' => password_hash($this->input->post('kata_sandi'), PASSWORD_DEFAULT),
+                'alamat' => $this->input->post('alamat', true),
+                'kartu' => '',
                 'id_level'=> 2,
                 'status_aktif' => 1,
                 'dibuat' => date("Y-m-d H:i:s")
             ];
 
             $this->load->model('M_auth', 'm_auth');
+            $id_pengguna = $this->m_auth->daftar_akun($data);
+            $datax = [
+                'kartu' => $id_pengguna.'/PST/LKPRN/'.date('j').'/'.date('Y')
+            ];
+            $this->m_auth->update_akun($id_pengguna,$datax);
 
-            $this->m_auth->daftar_akun($data);
             $this->session->set_flashdata('success', 'Akun berhasil dibuat, silahkan masuk');
             redirect('auth');
             }

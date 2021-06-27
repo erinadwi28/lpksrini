@@ -39,17 +39,27 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<th scope="row">1</th>
-									<td>Menjahit Tata Busana</td>
-									<td>
-										<div class="btn-group" role="group">
-											<a href="">
-												<button id="" type="button" class="btn btn-success btn-sm">Cetak</button>
-											</a>
-										</div>
-									</td>
-								</tr>
+								<?php if(count($sertifikat)>0){ 
+									$no = 1;
+									foreach ($sertifikat as $list) { ?>
+										<tr>
+											<td scope="row"><?= $no++ ?></td>
+											<td><?= $list->nama_pelatihan; ?></td>
+											<td>
+												<div class="btn-group" role="group">
+													<a href="<?= $list->nama_file; ?>">
+														<button id="" type="button" class="btn btn-success btn-sm">Cetak</button>
+													</a>
+												</div>
+											</td>
+										</tr>
+								<?php }  } else { ?>
+									<tr>
+										<td colspan="3" style="text-align:center;">Anda belum memiliki sertifikat!</td>
+									</tr>
+								<?php } ?>
+
+								
 							</tbody>
 						</table>
 					</div>
