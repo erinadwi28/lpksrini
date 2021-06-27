@@ -5960,6 +5960,29 @@ header .form-inline .search-form.close {
 	background: transparent;
 }
 
+@media (max-width: 576px) {
+	.top_tanggal{
+	  display:none;
+	}
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+	.top_tanggal{
+	  display:none;
+	}
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.top_tanggal{
+	  display:none;
+	}
+  }
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.top_tanggal{
+	  display:none;
+	}
+  }
 .dropdown-menu {
 	border-radius: 0;
 	-webkit-transform: none !important;
@@ -7707,6 +7730,18 @@ header .form-inline .search-form.close {
     font-weight: 500;
     transition: all .4s;
 }
+
+.btn-upload{
+	background: #FDAE5C;
+    color: #fff;
+	border: 0;
+}
+.btn-upload:hover{
+	background: #ee9230;
+    color: #fff;
+	border: 0;
+}
+
 
 /* Topbar */
 .username {

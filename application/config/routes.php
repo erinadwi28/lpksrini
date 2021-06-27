@@ -62,3 +62,4 @@ $route['pelatihan-aktif'] = 'Member/pelatihan_aktif';
 $route['kurikulum'] = 'Member/kurikulum';
 $route['kelas'] = 'Member/kelas';
 $route['sertifikat'] = 'Member/sertifikat';
+$route['detail-profil'] = 'Member/detail_profil';

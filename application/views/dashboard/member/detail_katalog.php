@@ -18,21 +18,30 @@
 		</div>
 	</div>
 </div>
+			
 <div class="progress">
 	<div class="progress-bar" role="progressbar" style="width:10%; height:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+			
 <!-- detail_berita_start -->
 <div class="isi_berita">
 	<div class="container mt-1" style="padding:30px;">
 		<div class="row">
+
 			<div class="col-sm-12">
+<?php foreach ($transaksi as $detail) { ?>
+		<?php if($detail->status == "aktif") {?>
                 <div class="alert  alert-success alert-dismissible fade show" role="alert">
                     <span class="badge badge-pill badge-success">Success</span> &nbsp; Anda sudah melakukan pembelian pelatihan ini.
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+				<?php } ?>
+			<?php } ?>
+
             </div>
+			
 			<?php foreach ($detail_pelatihan as $detail) { ?>
 			<div class="col-lg-7">
 				<article>
@@ -53,6 +62,8 @@
 			</div>
 			<?php } ?>
 			<!-- Side widgets-->
+			<?php foreach ($transaksi as $detail) { ?>
+		<?php if($detail->status != "aktif") {?>
 			<div class="col-lg-5">
 				<div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
 					<div class="card-header">
@@ -141,7 +152,23 @@
 						
 					</div>
 				</div>
-			</div>
+				</div>
+				<?php } elseif($detail->status == "aktif") { ?>
+					<div class="col-lg-5">
+					 <div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
+					<div class="card-header">
+						<h5 class="fw-bolder mb-0 text-center">Informasi Penting</h5>
+					</div>
+					<div class="card-body">
+						<!-- info -->
+						<p>Selesaikan pembelajaran di menu Pelatihan Saya dan dapatkan sertifikatnya.</p>
+						
+					</div>
+				</div>
+					</div>
+				<?php }  ?>
+				<?php }  ?>
+			
 		</div>
 	</div>
 </div>

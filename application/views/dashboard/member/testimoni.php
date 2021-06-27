@@ -42,13 +42,21 @@
 			<!-- Form Testimoni -->
 			<div class="col-lg-6">
 				<div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
-						<?= form_open('member/tambah_testimoni', ['class' => 'testimoni']) ?>
+					<?= form_open('member/tambah_testimoni', ['class' => 'testimoni']) ?>
 					<div class="card-body ">
 						<div class="pesan" style="display: none;"></div>
 						<div class="form-group mt-2">
-							<label for="isi" class=" form-control-label">Bagaimana penilaian Anda terhadap pelatihan di
-								LPKS RINI ? Yuk berikan kesan dan pesanmu agar kami lebih baik kedepannya.</label>
+						<?php if(count($testimoni)>0){
+							
+							foreach ($testimoni as $detail) { ?>
+<label for="isi" class=" form-control-label">Terimakasih sudah bersedia mengisi testimoni. Berikut kesan dan pesan Anda.</label>
+							<textarea type="text" id="isi" name="isi" disabled
+								class="form-control testimoni"><?= $detail->isi; ?></textarea>
+								<?php } ?>
+						<?php }   else { ?>
 
+						<label for="isi" class=" form-control-label">Bagaimana penilaian Anda terhadap pelatihan di
+								LPKS RINI ? Yuk berikan kesan dan pesanmu agar kami lebih baik kedepannya.</label>
 							<textarea type="text" id="isi" name="isi"
 								placeholder="ketik testimoni disini, maksimal 35 kata ya"
 								class="form-control testimoni"></textarea>
@@ -61,11 +69,18 @@
 							<button type="submit" class="btn btn-primary btn-confirmation">
 								Kirim
 							</button>
-						</div>
 					</div>
-						<?= form_close() ?>
+						<?php } ?>
+
+							
+							
+
+							
+						
+					<?= form_close() ?>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>

@@ -22,4 +22,5 @@ class Beranda extends CI_Controller {
                 $data = $this->m_landing->get_data_program();
                 echo json_encode($data);
 	}
+
 }
