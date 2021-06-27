@@ -19,8 +19,11 @@
 <script src="<?= base_url('assets/frontend/dashboard') ?>/js/dashboard.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/js/widgets.js"></script>
 <script src="<?= base_url('assets/frontend/libraries/parsley/parsley.js') ?>"></script>
+<script src="<?= base_url('assets/frontend/dashboard') ?>/js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <script src="<?= base_url('assets/backend/js') ?>/app.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+<!-- Sweet alert -->
+
 <script>
         var tw = new Date();
         if (tw.getTimezoneOffset() == 0)(a = tw.getTime() + (7 * 60 * 60 * 1000))
@@ -36,6 +39,27 @@
         document.getElementById("top-info-date").innerHTML = hariarray[hari] + " " + tanggal + " " + bulanarray[bulan] +
             " " + tahun + " ";
 </script>
+
+<!-- tambah data dan hapus data -->
+<script>
+
+// Testimoni sweet
+(function($){
+const flashData = $('.flash-data').data('flashdata');
+	if (flashData) {
+		
+        Swal.fire({
+							icon: 'success',
+							title: 'Berhasil',
+							text: flashData,
+			type: 'success'
+						});
+	}
+ 
+})(jQuery);
+	
+</script>
+
 </body>
 
 </html>

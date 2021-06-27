@@ -29,7 +29,7 @@
 				<li <?=$this->uri->segment(1) == 'sertifikat' ? 'class="active"' : '' ?>>
 					<a href="<?= base_url('sertifikat') ?>"><i class="menu-icon fa fa-print"></i> Cetak Sertifikat</a>
 				</li>
-
+				if (<?= $testimoni['status']; ?> == 0){}
 				<li <?=$this->uri->segment(1) == 'testimoni' ? 'class="active"' : '' ?>>
 					<a href="<?= base_url('testimoni') ?>"> <i class="menu-icon fa fa-comment-o"></i>Testimoni </a>
 				</li>

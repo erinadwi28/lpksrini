@@ -19,7 +19,7 @@
 	</div>
 </div>
 <div class="progress">
-	<div class="progress-bar" role="progressbar" style="width:10%; hight:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+	<div class="progress-bar" role="progressbar" style="width:10%; height:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 <!-- detail_berita_start -->
 <div class="isi_berita">
@@ -33,28 +33,25 @@
                     </button>
                 </div>
             </div>
+			<?php foreach ($detail_pelatihan as $detail) { ?>
 			<div class="col-lg-7">
 				<article>
 					<header class="mb-4">
-						<h2 class="fw-bolder mb-1">Menjahit Tata Busana</h2>
+						<h2 class="fw-bolder mb-1"><?= $detail->nama_pelatihan ?></h2>
 					</header>
 					<figure class="mb-4 ">
-						<img class="detail_image" src="<?= base_url('assets/frontend/images/landing/courses/7.jpg') ?>"
-							alt="" />
+                    <img class="detail_image" src="<?= base_url("assets/frontend/images/landing/courses/$detail->gambar_pelatihan") ?>" alt="">
 					</figure>
 					<section class="mb-3">
-						<p class="fs-5 mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptate
-							cum reprehenderit dolorem magnam accusantium nemo, necessitatibus tenetur deserunt. Fuga sit
-							distinctio deleniti libero reprehenderit assumenda sint eligendi doloremque eos?</p>
+						<p class="fs-5 mb-1"><?= $detail->deskripsi ?></p>
 					</section>
 					<section class="mb-5">
 						<h5 class="fw-bolder mb-1">Kurikulum</h5>
-						<p class="fs-5 mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptate
-							cum reprehenderit dolorem magnam accusantium nemo, necessitatibus tenetur deserunt. Fuga sit
-							distinctio deleniti libero reprehenderit assumenda sint eligendi doloremque eos?</p>
+                        <img src="<?= base_url("assets/frontend/images/landing/kurikulum/$detail->kurikulum") ?>" alt="">  
 					</section>
 				</article>
 			</div>
+			<?php } ?>
 			<!-- Side widgets-->
 			<div class="col-lg-5">
 				<div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
@@ -80,24 +77,42 @@
 						</table>
 
 						<!-- payment -->
+						<?php foreach ($detail_pelatihan as $detail) { ?>
 						<h6 class="mb-2 mt-3">Detail Pembayaran</h6>
+						<?= form_open('member/beli', ['class' => 'form_beli']) ?>
+						<div class="pesan" style="display: none;"></div>
 						<table>
 							<tr>
 								<td width="240px" class="text-muted">Harga</td>
-								<td>Rp. 1.000.000</td>
+								<td><input class="form-control" name="harga" id="harga" type="text" value="<?= $detail->harga?>">
+								</td>
+							</tr>
+							<tr>
+								<td width="240px" class="text-muted">Diskon</td>
+								<td><input class="form-control" name="diskon" id="diskon" type="text" value="2000"></td>
 							</tr>
 							<tr>
 								<td class="text-muted">Total Transfer</td>
-								<td>Rp. 1.000.000</td>
+								<td><input class="form-control" name="total" id="total" type="text" value=""></td>
+								
+							</tr>
+							<tr>
+							<td><input name="id_pelatihan" id="id_pelatihan" type="hidden" value="<?= $detail->id_pelatihan?>" ></td>
+							<td><input name="id_pengguna" id="id_pengguna" type="hidden" value=" <?= $pengguna['id_pengguna']; ?>" ></td>
 							</tr>
 						</table>
-
+						
+						
 						<div>
 							<div class="text-center mt-3 mb-3">
-								<a class="btn btn-primary btn-buy"
-									href="">Beli Pelatihan</a>
+							<button type="submit" class="btn btn-primary btn-buy">
+							Beli Pelatihan
+							</button>
 							</div>
 						</div>
+
+						<?= form_close() ?>
+						<?php } ?>
 
 						<div>
 							<!-- transfer -->

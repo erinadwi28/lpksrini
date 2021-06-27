@@ -155,7 +155,7 @@
 		<div class="container">
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-					<div class="row" id="program_pelatihan">
+					<div class="row" id="program_pelatihan"> 
 						<!-- data di app.js -->
 					</div>
 					<div class="col-xl-12">

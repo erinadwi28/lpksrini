@@ -56,7 +56,7 @@ $route['translate_uri_dashes'] = FALSE;
 // url
 $route['dashboard'] = 'Member/index';
 $route['katalog'] = 'Member/katalog';
-$route['detail-katalog'] = 'Member/detail_katalog';
+$route['detail-katalog/(:num)'] = 'Member/detail_katalog/$1';
 $route['testimoni'] = 'Member/testimoni';
 $route['pelatihan-aktif'] = 'Member/pelatihan_aktif';
 $route['kurikulum'] = 'Member/kurikulum';

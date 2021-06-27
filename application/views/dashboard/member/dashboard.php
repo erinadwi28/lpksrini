@@ -17,8 +17,12 @@
 	</div>
 </div>
 
+<div class="flash-data" data-flashdata="<?= $this->session->flashdata('success'); ?>"></div>
+<?php if ($this->session->flashdata('success')) : ?>
+<?php endif; ?>
+
 <div class="progress">
-	<div class="progress-bar" role="progressbar" style="width:5%; hight:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+	<div class="progress-bar" role="progressbar" style="width:5%; height:5px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
 <div class="content mt-3" style="padding-right:15px; padding-left:15px;"> 
