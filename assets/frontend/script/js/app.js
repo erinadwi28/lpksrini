@@ -30,6 +30,34 @@ $.ajax({
     }
 });
 
+//--------------Semua Testimoni--------------//
+// $.ajax({
+//     type: "POST",
+//     url: "beranda/semua_testimoni",
+//     dataType: 'json',
+//     success: function(data){
+//         var html = '';
+//         for(var i=0; i<data.length; i++){
+//             html += '<div class="single_testmoial">'+
+//                         '<div class="container">'+
+//                             '<div class="row">'+
+//                                 '<div class="col-xl-12">'+
+//                                     '<div class="testmonial_text text-center">'+
+//                                         '<div class="author_img">'+
+//                                             '<img style="width: 140px !important; height: 140px !important; border-radius: 280px; -webkit-border-radius: 280px; -moz-border-radius: 280px;"'+
+//                                              'src="assets/backend/images/member/foto_profil/'+ data[i].foto_profil +'" alt="">'+
+//                                         '</div>'+
+//                                         '<p>'+ data[i].isi +'</p>'+
+//                                         '<span>- '+ data[i].nama +''+
+//                                     '</div>'+
+//                                 '</div>'+
+//                             '</div>'+
+//                         '</div>'+
+//                     '</div>';
+//         }
+//         $('#testimoni_beranda').html(html);
+//     }
+// });
 
 //--------------Berita--------------//
 $.ajax({

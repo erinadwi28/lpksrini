@@ -88,7 +88,7 @@
                             </div>
                         </center>
                         <div class="text-right mt-4">
-                            <a href="#" class="btn btn-primary">Daftar Sekarang</a>
+                            <a href="<?= base_url('auth/daftar') ?>" class="btn btn-primary">Daftar Sekarang</a>
                         </div>
                     </div>
                 </div>

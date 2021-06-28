@@ -79,12 +79,13 @@
 		<div class="row">
 			<div class="col-xl-5 col-lg-6">
 				<div class="single_about_info">
-					<h3>Lebih dari 50 Tutorial <br> dari 20 Program</h3>
+					<h3>Program pelatihan yang menarik!</h3>
+					<br>
 					<p>Sistem pembelajaran yang kami terapkan sangat mudah dimengerti dan dipelajari, karena tutorial
 						pembelajran dapat berupa video praktik
 						dan juga terdapat kuis yang menarik.
-					</p>
-					<p>Sistem pembelajaran yang kami terapkan sangat mudah dimengerti dan dipelajari, karena tutorial
+						<br>
+						Sistem pembelajaran yang kami terapkan sangat mudah dimengerti dan dipelajari, karena tutorial
 						pembelajran dapat berupa video praktik
 						dan juga terdapat kuis yang menarik.
 					</p>
@@ -96,16 +97,16 @@
 					<div class="courses">
 						<div class="inner_courses">
 							<div class="text_info">
-								<span>20+</span>
-								<p> Program</p>
+								<span><?= $jumlah_kurikulum ?></span>
+								<p> Kurikulum</p>
 							</div>
 						</div>
 					</div>
 					<div class="courses-blue">
 						<div class="inner_courses">
 							<div class="text_info">
-								<span>300+</span>
-								<p> Tutorial</p>
+								<span><?= $jumlah_materi ?></span>
+								<p> Materi</p>
 							</div>
 
 						</div>
@@ -113,7 +114,7 @@
 					<div class="courses-sky">
 						<div class="inner_courses">
 							<div class="text_info">
-								<span>500+</span>
+								<span><?= $jumlah_pengguna ?></span>
 								<p> Pengguna</p>
 							</div>
 						</div>
@@ -155,7 +156,7 @@
 		<div class="container">
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-					<div class="row" id="program_pelatihan"> 
+					<div class="row justify-content-center align-items-center" id="program_pelatihan"> 
 						<!-- data di app.js -->
 					</div>
 					<div class="col-xl-12">
@@ -173,47 +174,23 @@
 <!-- testimonial_area_start -->
 <div class="testimonial_area testimonial_bg_1 overlay">
 	<div class="testmonial_active owl-carousel">
-		<div class="single_testmoial">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="testmonial_text text-center">
-							<div class="author_img">
-								<img src="<?= base_url('assets/frontend/images/landing/testmonial/2.jpg') ?>" alt="">
+		<?php foreach ($semua_testimoni as $detail) { ?>
+			<div class="single_testmoial">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="testmonial_text text-center">
+								<div class="author_img">
+									<img src="<?= base_url("assets/backend/images/member/foto_profil/$detail->foto_profil") ?>" alt="">
+								</div>
+								<p><?= $detail->isi; ?></p>
+								<span>- <?= $detail->nama; ?></span>
 							</div>
-							<p>
-								"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Fuga neque,
-								repudiandae
-								ipsam cumque inventore <br> facere eveniet maxime aut repellendus, quae porro
-								ullam."
-							</p>
-							<span>- Erina Dwi Utami</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="single_testmoial">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-12">
-						<div class="testmonial_text text-center">
-							<div class="author_img">
-								<img src="<?= base_url('assets/') ?>frontend/images/landing/testmonial/3.png" alt=""
-									class="img-fluid">
-							</div>
-							<p>
-								"Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Fuga neque,
-								repudiandae
-								ipsam cumque inventore <br> facere eveniet maxime aut repellendus, quae porro
-								ullam."
-							</p>
-							<span>- Erwita Eka</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php } ?>
 	</div>
 </div>
 <!-- testimonial_area_end -->

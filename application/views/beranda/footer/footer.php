@@ -11,7 +11,7 @@
 							</a>
 						</div>
 						<p class="footer_description">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non pariatur numquam animi nam at impedit odit nisi.
+						Lembaga Pelatihan Kerja Swasta yang didirikan oleh Ibu Sri Harini pada 6 Oktober 1987. Lembaga ini memiliki beberapa program pelatihan, namun program unggulannya yaitu Menjahit Tata Busana. 
 						</p>
 						<div class="socail_links">
 							<ul>
@@ -53,11 +53,11 @@
 							Menu
 						</h3>
 						<ul>
-							<li><a href="#"> Beranda</a></li>
-							<li><a href="#"> Profil</a></li>
-							<li><a href="#"> Program Pelatihan</a></li>
-							<li><a href="#"> Berita</a></li>
-							<li><a href="#"> Kontak</a></li>
+							<li><a href="<?= base_url('beranda') ?>"> Beranda</a></li>
+							<li><a href="<?= base_url('profil') ?>"> Profil</a></li>
+							<li><a href="<?= base_url('pelatihan') ?>"> Program Pelatihan</a></li>
+							<li><a href="<?= base_url('berita') ?>"> Berita</a></li>
+							<li><a href="<?= base_url('galeri') ?>"> Kontak</a></li>
 						</ul>
 					</div>
 				</div>

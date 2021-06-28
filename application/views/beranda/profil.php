@@ -70,7 +70,7 @@
 			</div>
 			<div class="col-xl-6 offset-xl-1 col-lg-6">
 				<div class="about_tutorials">
-					<img class="img-fluid" src="<?= base_url('assets/frontend/images/landing/placeholder_image.png') ?>"
+					<img class="img-fluid" style="height:400px;"src="<?= base_url('assets/frontend/images/landing/lkp_rini_profil.jpeg') ?>"
 						alt="">
 				</div>
 			</div>
@@ -100,59 +100,49 @@
 							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
 								data-parent="#accordion">
 								<div class="card-body">
-									Memulai usaha yang bertumpu pada tujuan profit oriented ada tahun 1980, yaitu usaha
-									dalam penerimaan jahitan bagi wanita dan anak. Tujuan semula adalah untuk sekedar
-									menambah penghasilan ekonomi keluarga. Perlahan tapi pasti, itu yang dirasakan pada
-									awal pendirian. Maka melihat kondisi demikian yang ternyata usaha ini mempunyai
-									kesempatan untuk berkembang lebih maju lagi, maka LPKS RINI berusaha untuk
-									mengembangkan sayap lebih lebar lagi dengan tujuan meningkatkan profit bisnis maka
-									pada tahun 1982, LPKS RNI memulai usaha konveksi dengan nama Konveksi EKA.
-									Peningkatan kualitas teknik jahit coba dilaksanakan dan diterapkan. Tetapi
-									kendala-kendala banyak dialami selama Konveksi EKA berjalan, mulai dari pengadaan
-									bahan baku yang masih susah, fasilitas yang masih kurang terjangkau dan Sumber Daya
-									Manusia belum memadai saat itu. Akhirnya untuk tetap bisa bertahan hidup LPKS RINI
-									tetap mempertahankan usaha menerima jahit pakaian wanita dan anak. Karena merasakan
-									kegelisahan akan Sumber Daya Manusia, wanita khususnya, yang kurang mempunyai
-									ketrampilan dan masih kurang mandiri saat itu, maka LPKS RINI merasa bahwa dia harus
-									mampu menyediakan Sumber Daya Manusia yang trampil dan mandiri, maka tercetuslah
-									untuk berbagi ilmu untuk para ibu rumah tangga dan remaja putri disekitar lingkungan
-									setempat.Pada tahun 1984 dimulailah kesempatan berbagai ketrampilan itu dengan
-									membuka kursus Menjahit dan Hantaran, yang ijinnya sendiri baru keluar pada tahun
-									1987, dan ternyata kursus ini banyak diminati. Peserta kursus yang mulai dari jumlah
-									kecil kelompok ibu-ibu dan remaja putri di lingkungan sekitar, lama kelamaan
-									merambah keluar daerah. Jumlah peserta kusus terus bertambah dan LPKS RINI berusaha
-									juga menambah jenis kursus yaitu Kursus Bordir. Peningkatan kualitas pembelajaran
-									dan fasilitas terus dikembangkan walau begitu permasalahan masih sering ditemui,
-									pengadaan prasarana dan fasilitas sering terbentur karena dana yang masih terbatas,
-									sehingga LPKS RINI bertahan dalam prasarana dan fasilitas yang seadanya, dengan
-									memakai tempat tinggal sebagai tempat kursus, dan belum memiliki tempat sendiri.
-									Fasilitas yang diharapkan mendukung proses belajar pengadaanya tersendat, walau
-									kualitas teknik pembelajaran tetap menjadi perhatian nomor satu. Perlahan pihak
-									lembaga memulai menjalin hubungan dengan instansi luar, missal sekolah – sekolah
-									yang membutuhkan tenaga praktisi, serta lembaga pemerintah yang membutuhkan tenaga
-									untuk penyuluhan ketrampilan.
-									Walau jalannya LPKS RINI agak tersendat,LPKS RINI tetap bertahan hingga sekarang,
-									bahkan LPKS RINI boleh berbangga karena telah mencetak ratusan tenaga terampil, dan
-									bisa membantu pemerintah dalam peningkatan kualitas hidup yang mandiri.LPKS RINI
-									tidak hanya berkutat dalam proses pendidikan ketrampilan yang diberikan tetapi juga
-									berusaha memikirkan bagaimana menyalurkan tenaga terampil yang telah dihasilkan dan
-									tidak membiarkan alumninya tidak menggunakan ketrampilan yang telah mereka peroleh.
-									Maka pihak lembaga menjalin hubungan juga dengan pihak Sentra Industri, baik itu
-									Konveksi, Lembaga Pendidikan Ketrampilan lain juga sentra industri lain yang
-									membutuhkan Sumber Daya Manusia. Atau bahkan LPKS RINI sendiri berusaha mendorong
-									para siswa untk bisa berkembang dan mempunyai usaha yang mandiri. Sebut saja SRITEX
-									yang berlokasi di Sukoharjo, yang merupakan Sentra Industri Tekstil yang selalu
-									membutuhkan Sumber Daya Manusia, maka LPKS RINI selalu mengirimkan tenaga terampil
-									ke Sentra Industri tersebut, dan tetap memantau perkembangan alumninya yang telah
-									bekerja di Sentra Industri tersebut. Jadi monitoring dan pengarahan tetap
-									dilaksanakan walau peserta didik telah selesai dalam mengikuti program belajar.
-									Masih ada beberapa Sentra Industri baik besar maupun kecil yang telah menjalin
-									hubungan dengan LPKS RINI, misal Konveksi NIKITA yang berlokasi di Solobaru, Rumah
-									Mode Sang Diva dan Modiste Keisha yang berlokasi di Yogyakarta, Konveksi GABELLA
-									Yogyakarta, SLTP Pengudi Luhur Cawas Klaten, serta lembaga-lembaga lain. Dan saat
-									ini menjadi kuwalahan untuk memenuhi permintaan dari pabrik pabrik yang membutuhkan
-									tenaga operator menjahit.Dan untuk mencukupi permintaan dari pabrik LPKS RINI
-									membuka cabang baru didaerah lain.
+								Memulai usaha yang bertumpu pada tujuan profit oriented ada tahun 1980, yaitu usaha dalam penerimaan 
+								jahitan bagi wanita dan anak. Tujuan semula adalah untuk sekedar menambah penghasilan ekonomi keluarga. 
+								Perlahan tapi pasti, itu yang dirasakan pada awal pendirian. Maka melihat kondisi demikian yang ternyata 
+								usaha ini mempunyai kesempatan untuk berkembang lebih maju lagi, maka LPKS RINI berusaha untuk mengembangkan 
+								sayap lebih lebar lagi dengan tujuan meningkatkan profit bisnis maka pada tahun 1982, LPKS RNI memulai usaha 
+								konveksi dengan nama Konveksi EKA. Peningkatan kualitas teknik jahit coba dilaksanakan dan diterapkan. 
+								Tetapi kendala-kendala banyak dialami selama Konveksi EKA berjalan, mulai dari pengadaan bahan baku yang 
+								masih susah, fasilitas yang masih kurang terjangkau dan Sumber Daya Manusia belum memadai saat itu. 
+								<br><br>
+								Akhirnya untuk tetap bisa bertahan hidup LPKS RINI tetap mempertahankan usaha menerima jahit pakaian wanita 
+								dan anak. Karena merasakan kegelisahan akan Sumber Daya Manusia, wanita khususnya, yang kurang mempunyai 
+								ketrampilan dan masih kurang mandiri saat itu, maka LPKS RINI merasa bahwa dia harus mampu menyediakan
+								Sumber Daya Manusia yang trampil dan mandiri, maka tercetuslah untuk berbagi ilmu untuk para ibu rumah
+								tangga dan remaja putri disekitar lingkungan setempat.Pada tahun 1984 dimulailah kesempatan berbagai
+								ketrampilan itu dengan membuka kursus Menjahit dan Hantaran, yang ijinnya sendiri baru keluar pada tahun 
+								1987, dan ternyata kursus ini banyak diminati. Peserta kursus yang mulai dari jumlah kecil kelompok ibu-ibu
+								dan remaja putri di lingkungan sekitar, lama kelamaan merambah keluar daerah. Jumlah peserta kusus terus 
+								bertambah dan LPKS RINI berusaha juga menambah jenis kursus yaitu Kursus Bordir. 
+								<br><br>
+								Peningkatan kualitas pembelajaran dan fasilitas terus dikembangkan walau begitu permasalahan masih sering 
+								ditemui, pengadaan prasarana dan fasilitas sering terbentur karena dana yang masih terbatas, sehingga LPKS
+								RINI bertahan dalam prasarana dan fasilitas yang seadanya, dengan memakai tempat tinggal sebagai tempat 
+								kursus, dan belum memiliki tempat sendiri. Fasilitas yang diharapkan mendukung proses belajar pengadaanya 
+								tersendat, walau kualitas teknik pembelajaran tetap menjadi perhatian nomor satu. Perlahan pihak lembaga 
+								memulai menjalin hubungan dengan instansi luar, missal sekolah – sekolah yang membutuhkan tenaga praktisi,
+								serta lembaga pemerintah yang membutuhkan tenaga untuk penyuluhan ketrampilan. Walau jalannya LPKS RINI 
+								agak tersendat,LPKS RINI tetap bertahan hingga sekarang, bahkan LPKS RINI boleh berbangga karena telah
+								mencetak ratusan tenaga terampil, dan bisa membantu pemerintah dalam peningkatan kualitas hidup yang mandiri.
+								<br><br>
+								LPKS RINI tidak hanya berkutat dalam proses pendidikan ketrampilan yang diberikan tetapi juga berusaha 
+								memikirkan bagaimana menyalurkan tenaga terampil yang telah dihasilkan dan tidak membiarkan alumninya tidak
+								menggunakan ketrampilan yang telah mereka peroleh. Maka pihak lembaga menjalin hubungan juga dengan pihak Sentra 
+								Industri, baik itu Konveksi, Lembaga Pendidikan Ketrampilan lain juga sentra industri lain yang membutuhkan Sumber 
+								Daya Manusia. Atau bahkan LPKS RINI sendiri berusaha mendorong para siswa untk bisa berkembang dan mempunyai usaha
+								yang mandiri. Sebut saja SRITEX yang berlokasi di Sukoharjo, yang merupakan Sentra Industri Tekstil yang selalu
+								membutuhkan Sumber Daya Manusia, maka LPKS RINI selalu mengirimkan tenaga terampil ke Sentra Industri tersebut,
+								dan tetap memantau perkembangan alumninya yang telah bekerja di Sentra Industri tersebut. Jadi monitoring dan
+								pengarahan tetap dilaksanakan walau peserta didik telah selesai dalam mengikuti program belajar. Masih ada 
+								beberapa Sentra Industri baik besar maupun kecil yang telah menjalin hubungan dengan LPKS RINI, misal Konveksi
+								NIKITA yang berlokasi di Solobaru, Rumah Mode Sang Diva dan Modiste Keisha yang berlokasi di Yogyakarta,
+								Konveksi GABELLA Yogyakarta, SLTP Pengudi Luhur Cawas Klaten, serta lembaga-lembaga lain. Dan saat ini menjadi 
+								kuwalahan untuk memenuhi permintaan dari pabrik pabrik yang membutuhkan tenaga operator menjahit.Dan untuk
+								mencukupi permintaan dari pabrik LPKS RINI membuka cabang baru didaerah lain. 
 
 								</div>
 							</div>
@@ -320,7 +310,7 @@
 			<div class="col-xl-3 col-md-6 col-lg-3">
 				<div class="single_team">
 					<div class="thumb">
-						<img src="<?= base_url('assets/frontend/images/landing/struktur/2.jpg') ?>" alt="">
+						<img src="<?= base_url('assets/frontend/images/landing/struktur/ketua.jpg') ?>" alt="">
 						<div class="social_link">
 							<a href="#"><i class="fa fa-envelope"></i></a>
 							<a href="#"><i class="fa fa-instagram"></i></a>
@@ -336,7 +326,7 @@
 			<div class="col-xl-3 col-md-6 col-lg-3">
 				<div class="single_team">
 					<div class="thumb">
-						<img src="<?= base_url('assets/frontend/images/landing/struktur/2.jpg') ?>" alt="">
+						<img src="<?= base_url('assets/frontend/images/landing/struktur/bendahara.jpg') ?>" alt="">
 						<div class="social_link">
 							<a href="#"><i class="fa fa-envelope"></i></a>
 							<a href="#"><i class="fa fa-instagram"></i></a>
@@ -352,7 +342,7 @@
 			<div class="col-xl-3 col-md-6 col-lg-3">
 				<div class="single_team">
 					<div class="thumb">
-						<img src="<?= base_url('assets/frontend/images/landing/struktur/2.jpg') ?>" alt="">
+						<img src="<?= base_url('assets/frontend/images/landing/struktur/sekretaris.jpg') ?>" alt="">
 						<div class="social_link">
 							<a href="#"><i class="fa fa-envelope"></i></a>
 							<a href="#"><i class="fa fa-instagram"></i></a>
@@ -368,7 +358,7 @@
 			<div class="col-xl-3 col-md-6 col-lg-3">
 				<div class="single_team">
 					<div class="thumb">
-						<img src="<?= base_url('assets/frontend/images/landing/struktur/2.jpg') ?>" alt="">
+						<img src="<?= base_url('assets/frontend/images/landing/struktur/pemasaran.jpg') ?>" alt="">
 						<div class="social_link">
 							<a href="#"><i class="fa fa-envelope"></i></a>
 							<a href="#"><i class="fa fa-instagram"></i></a>
@@ -376,8 +366,8 @@
 						</div>
 					</div>
 					<div class="master_name text-center">
-						<h3>Bagus Purnomo</h3>
-						<p>Bagian Umum</p>
+						<h3>Heni Suryastuti</h3>
+						<p>Bagian Pemasaran</p>
 					</div>
 				</div>
 			</div>
