@@ -187,7 +187,7 @@
 			</div>
 		</div> -->
 	</div>
-	<div class="all_courses">
+	<div class="all_courses mb-4">
 		<div class="container">
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -207,7 +207,7 @@
 <!-- courses-->
 
 <!-- testimonial_area_start -->
-<div class="testimonial_area testimonial_bg_1 overlay">
+<div class="testimonial_area testimonial_bg_1 overlay mt-2">
 	<div class="testmonial_active owl-carousel">
 		<?php foreach ($semua_testimoni as $detail) { ?>
 			<div class="single_testmoial">
@@ -333,3 +333,4 @@
 	</div>
 </div>
 <!-- Partner end -->
+</div>
