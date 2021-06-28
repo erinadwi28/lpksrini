@@ -120,6 +120,7 @@
                             text: response.sukses,
 							
 						})
+						
 					}
 				},
 				error: function (xhr, ajaxOptions, thrownError) {

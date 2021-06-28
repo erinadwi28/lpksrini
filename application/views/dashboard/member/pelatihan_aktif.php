@@ -58,7 +58,7 @@
 		<div class="row">
 			<div class="container mt-1" style="padding-right:30px; padding-left:30px;">
 				<center>
-					<img class="img-fluid mt-4 mb-1" style="max-height:400px;"src="<?= base_url('assets/frontend/images/landing/empity_pelatihan.png') ?>" alt="">
+					<img class="img-fluid mt-4 mb-1" style="max-height:400px;"src="<?= base_url('assets/frontend/images/landing/empity_pelatihan.png') ?>" alt="" width="670">
 					<div class="text-center mt-4 mb-2">
 						<a class="btn btn-primary btn-confirmation"
 							href="<?= base_url('katalog') ?>">Beli Program Pelatihan</a>
