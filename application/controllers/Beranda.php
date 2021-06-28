@@ -16,7 +16,8 @@ class Beranda extends CI_Controller {
                 $data['jumlah_kurikulum'] = $this->m_landing->jumlah_kurikulum();
                 $data['jumlah_materi'] = $this->m_landing->jumlah_materi();
                 $data['semua_testimoni'] = $this->m_landing->get_data_testimoni();
-                
+                $data['pengguna'] = $this->db->get_where('pengguna', ['id_pengguna' => $this->session->userdata('id_pengguna')])->row_array();
+
                 $this->load->view('beranda/header/header', $data_title);
                 $this->load->view('beranda/beranda', $data);
                 $this->load->view('beranda/footer/footer');

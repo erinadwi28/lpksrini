@@ -25,6 +25,34 @@
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
+						<?php if($this->session->userdata('id_level') =='2'){ ?>
+						<div class="log_chat_area d-flex align-items-center">
+							<a href="<?= base_url('auth') ?>" class="login">
+								<i class="flaticon-user"></i>
+								<span><?= $pengguna['nama']; ?></span>
+							</a>
+							<div class="live_chat_btn">
+								<a class="boxed_btn_orange" href="#">
+									<i class="fa fa-phone"></i>
+									<span>081578933767</span>
+								</a>
+							</div>
+						</div>
+						<?php } elseif($this->session->userdata('id_level') =='1') {?>
+						<div class="log_chat_area d-flex align-items-center">
+							<a href="<?= base_url('auth') ?>" class="login">
+								<i class="flaticon-user"></i>
+								<span><?= $admin['nama']; ?></span>
+							</a>
+							<div class="live_chat_btn">
+								<a class="boxed_btn_orange" href="#">
+									<i class="fa fa-phone"></i>
+									<span>081578933767</span>
+								</a>
+							</div>
+						</div>
+						<?php } else {?>
+
 						<div class="log_chat_area d-flex align-items-center">
 							<a href="<?= base_url('auth') ?>" class="login">
 								<i class="flaticon-user"></i>
@@ -37,6 +65,8 @@
 								</a>
 							</div>
 						</div>
+
+						<?php } ?>
 					</div>
 					<div class="col-12">
 						<div class="mobile_menu d-block d-lg-none"></div>
@@ -62,9 +92,13 @@
 				<div class="col-xl-6 col-md-6">
 					<div class="slider_info">
 						<h3>Saatnya <br> menjadi Tenaga Kerja <br> berjiwa Profesional </h3>
-						<a href="#login" class="login popup-with-form boxed_btn">
+						<?php if(!$this->session->userdata('email') && (!$this->session->userdata('id_level') == 2 || !$this->session->userdata('id_level') == 2)){ ?>
+
+						<a href="<?= base_url('auth') ?>" class="login boxed_btn">
 							<span>Masuk | Daftar</span>
 						</a>
+
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -133,7 +167,8 @@
 			<div class="col-xl-12">
 				<div class="section_title text-center mb-4">
 					<h3>Program Pelatihan</h3>
-					<p>Pilih program pelatihan yang anda inginkan dan tentunya semua pelatihan akan bermanfaat untuk anda.</p><br>
+					<p>Pilih program pelatihan yang anda inginkan dan tentunya semua pelatihan akan bermanfaat untuk
+						anda.</p><br>
 				</div>
 			</div>
 		</div>
@@ -157,6 +192,7 @@
 			<div class="tab-content" id="myTabContent">
 				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 					<div class="row justify-content-center align-items-center" id="program_pelatihan"> 
+					<div class="row" id="program_pelatihan">
 						<!-- data di app.js -->
 					</div>
 					<div class="col-xl-12">
@@ -216,7 +252,8 @@
 					</div>
 					<h3>Kualitas Premium</h3>
 					<p>
-						Pelatihan yang kami lakukan sesuai dengan kurikulum yang kami sesuaikan langsung dengan mitra kerja atau partner.
+						Pelatihan yang kami lakukan sesuai dengan kurikulum yang kami sesuaikan langsung dengan mitra
+						kerja atau partner.
 					</p>
 				</div>
 			</div>
@@ -229,7 +266,8 @@
 					</div>
 					<h3>Harga Terjangkau</h3>
 					<p>
-						Biaya yang cukup terjangkau, namung materi yang kami ajarkan tetap komplit dan mudah untuk di pelajari.
+						Biaya yang cukup terjangkau, namung materi yang kami ajarkan tetap komplit dan mudah untuk di
+						pelajari.
 					</p>
 				</div>
 			</div>
@@ -242,7 +280,7 @@
 					</div>
 					<h3>Serifikat Resmi</h3>
 					<p>
-						Setelah mengikuti pelatihan, peserta akan mendapatkan sertifikat dan 
+						Setelah mengikuti pelatihan, peserta akan mendapatkan sertifikat dan
 						lembaga kami telah diakui oleh Dinas Pendidikan dan Pemerintah.
 					</p>
 				</div>
@@ -256,7 +294,8 @@
 					</div>
 					<h3>Dididik Profesional</h3>
 					<p>
-						Kami mengajarkan pelatihan secara profesional, sungguh-sungguh, bagi yg mulai dari nol, akan dibantu hingga bisa.
+						Kami mengajarkan pelatihan secara profesional, sungguh-sungguh, bagi yg mulai dari nol, akan
+						dibantu hingga bisa.
 					</p>
 				</div>
 			</div>
@@ -281,11 +320,13 @@
 			<div class="col-md-12 partner_item">
 				<div class="partner_active owl-carousel owl-theme" id="partner_lkp">
 					<?php foreach ($detail_partner as $detail) { ?>
-						<div class="item">
-							<a href="<?= $detail->link_website_partner; ?>">
-								<img class="img-fluid" src="<?= base_url("assets/frontend/images/landing/partner/$detail->gambar_partner ") ?>" alt="">
-							</a>
-						</div>
+					<div class="item">
+						<a href="<?= $detail->link_website_partner; ?>">
+							<img class="img-fluid"
+								src="<?= base_url("assets/frontend/images/landing/partner/$detail->gambar_partner ") ?>"
+								alt="">
+						</a>
+					</div>
 					<?php } ?>
 				</div>
 			</div>

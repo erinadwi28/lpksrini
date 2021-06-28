@@ -164,7 +164,7 @@
 							<p class="mt-1">atas nama LPKS RINI<br><b>1050848169</b></p>
 							<!-- button confirm -->
 							<div class="text-center mt-3 mb-3">
-								<a class="btn btn-primary btn-confirmation"
+								<a class="btn btn-primary btn-confirmation" target="_blank"
 									href="https://api.whatsapp.com/send?phone=6285713609299&text=Halo,%20Saya%20sudah%20melakukan%20pembayaran%20pelatihan.%20Berikut%20saya%20lampirkan%20foto%20bukti%20pembayaran:">Konfirmasi
 									Pembayaran</a>
 							</div>
@@ -299,7 +299,7 @@
 							<p class="mt-1">atas nama LPKS RINI<br><b>1050848169</b></p>
 							<!-- button confirm -->
 							<div class="text-center mt-3 mb-3">
-								<a class="btn btn-primary btn-confirmation"
+								<a class="btn btn-primary btn-confirmation" target="_blank"
 									href="https://api.whatsapp.com/send?phone=6285713609299&text=Halo,%20Saya%20sudah%20melakukan%20pembayaran%20pelatihan.%20Berikut%20saya%20lampirkan%20foto%20bukti%20pembayaran:">Konfirmasi
 									Pembayaran</a>
 							</div>

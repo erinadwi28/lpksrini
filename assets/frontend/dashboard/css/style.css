@@ -7735,6 +7735,8 @@ header .form-inline .search-form.close {
 	background: #FDAE5C;
     color: #fff;
 	border: 0;
+	border-top-right-radius: .25rem;
+	border-bottom-right-radius: .25rem;
 }
 .btn-upload:hover{
 	background: #ee9230;

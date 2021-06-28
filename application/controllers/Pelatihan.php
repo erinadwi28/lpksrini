@@ -10,9 +10,10 @@ class Pelatihan extends CI_Controller {
 
 	public function index(){   
                 $data_title['title'] = 'Pelatihan';
+                $data['pengguna'] = $this->db->get_where('pengguna', ['id_pengguna' => $this->session->userdata('id_pengguna')])->row_array();
 
                 $this->load->view('beranda/header/header', $data_title);
-                $this->load->view('beranda/pelatihan');
+                $this->load->view('beranda/pelatihan',$data);
                 $this->load->view('beranda/footer/footer');
 	}
 
@@ -20,9 +21,10 @@ class Pelatihan extends CI_Controller {
                 $data_title['title'] = 'Detail Pelatihan';
 
                 $data_detail['detail_pelatihan'] = $this->m_landing->get_data_programID($id);
+                $data['pengguna'] = $this->db->get_where('pengguna', ['id_pengguna' => $this->session->userdata('id_pengguna')])->row_array();
 
                 $this->load->view('beranda/header/header', $data_title);
-                $this->load->view('beranda/detail_pelatihan', $data_detail);
+                $this->load->view('beranda/detail_pelatihan', $data_detail+$data);
                 $this->load->view('beranda/footer/footer');
 	}
 }
