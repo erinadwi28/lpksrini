@@ -14,7 +14,7 @@
 
 		<div id="main-menu" class="main-menu collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<h3 class="menu-title">Main</h3><!-- /.menu-title -->
+				<h3 class="menu-title">Menu</h3><!-- /.menu-title -->
 
 				<li <?=$this->uri->segment(1) == 'dashboard' || $this->uri->segment(1) == '' ? 'class="active"' : '' ?>>
 					<a href="<?= base_url('dashboard') ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
