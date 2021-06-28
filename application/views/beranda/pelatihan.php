@@ -25,6 +25,34 @@
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 d-none d-lg-block">
+						<?php if($this->session->userdata('id_level') =='2'){ ?>
+						<div class="log_chat_area d-flex align-items-center">
+							<a href="<?= base_url('auth') ?>" class="login">
+								<i class="flaticon-user"></i>
+								<span><?= $pengguna['nama']; ?></span>
+							</a>
+							<div class="live_chat_btn">
+								<a class="boxed_btn_orange" href="#">
+									<i class="fa fa-phone"></i>
+									<span>081578933767</span>
+								</a>
+							</div>
+						</div>
+						<?php } elseif($this->session->userdata('id_level') =='1') {?>
+						<div class="log_chat_area d-flex align-items-center">
+							<a href="<?= base_url('auth') ?>" class="login">
+								<i class="flaticon-user"></i>
+								<span><?= $admin['nama']; ?></span>
+							</a>
+							<div class="live_chat_btn">
+								<a class="boxed_btn_orange" href="#">
+									<i class="fa fa-phone"></i>
+									<span>081578933767</span>
+								</a>
+							</div>
+						</div>
+						<?php } else {?>
+
 						<div class="log_chat_area d-flex align-items-center">
 							<a href="<?= base_url('auth') ?>" class="login">
 								<i class="flaticon-user"></i>
@@ -37,6 +65,8 @@
 								</a>
 							</div>
 						</div>
+
+						<?php } ?>
 					</div>
 					<div class="col-12">
 						<div class="mobile_menu d-block d-lg-none"></div>

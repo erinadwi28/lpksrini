@@ -12,6 +12,7 @@ class Galeri extends CI_Controller {
                 $data_title['title'] = 'Galeri';
 
                 $data['detail_galeri'] = $this->m_landing->get_data_galeri();
+                $data['pengguna'] = $this->db->get_where('pengguna', ['id_pengguna' => $this->session->userdata('id_pengguna')])->row_array();
 
                 $this->load->view('beranda/header/header', $data_title);
                 $this->load->view('beranda/galeri', $data);

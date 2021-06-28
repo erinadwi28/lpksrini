@@ -92,9 +92,13 @@
 				<div class="col-xl-6 col-md-6">
 					<div class="slider_info">
 						<h3>Saatnya <br> menjadi Tenaga Kerja <br> berjiwa Profesional </h3>
-						<a href="#login" class="login popup-with-form boxed_btn">
+						<?php if(!$this->session->userdata('email') && (!$this->session->userdata('id_level') == 2 || !$this->session->userdata('id_level') == 2)){ ?>
+
+						<a href="<?= base_url('auth') ?>" class="login boxed_btn">
 							<span>Masuk | Daftar</span>
 						</a>
+
+						<?php } ?>
 					</div>
 				</div>
 			</div>
