@@ -61,6 +61,7 @@ class Member extends CI_Controller {
 	}
 
         public function upload_foto_profil(){
+                if($this->session->userdata('id_level') =='2'){
                 $id_pengguna = $this->session->userdata('id_pengguna');
 
                 $config['upload_path']          = './assets/backend/images/member/foto_profil/';
@@ -103,7 +104,9 @@ class Member extends CI_Controller {
                 redirect('detail-profil');
                 }
                 }
-                
+        } else{
+			echo "Anda tidak berhak mengakses halaman ini";
+		}
         }
 
 	 public function katalog(){ 
