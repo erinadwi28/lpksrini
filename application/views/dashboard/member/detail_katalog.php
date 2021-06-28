@@ -239,7 +239,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text" id="basic-addon1">Rp</span>
 										</div>
-										<input type="text" class="form-control" placeholder="harga" id="harga" name="harga"
+										<input readonly type="text" class="form-control" placeholder="harga" id="harga" name="harga"
 											aria-label="harga" aria-describedby="basic-addon1"
 											value="<?= $detail->harga?>">
 									</div>
@@ -252,7 +252,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text" id="basic-addon1">Rp</span>
 										</div>
-										<input type="text" class="form-control" placeholder="diskon" id="diskon" name="diskon"
+										<input readonly type="text" class="form-control" placeholder="diskon" id="diskon" name="diskon"
 											aria-label="diskon" aria-describedby="basic-addon1" value="2000">
 									</div>
 								</td>
@@ -265,7 +265,7 @@
 										<div class="input-group-prepend">
 											<span class="input-group-text" id="basic-addon1">Rp</span>
 										</div>
-										<input type="text" class="form-control" placeholder="total" id="total" name="total"
+										<input readonly type="text" class="form-control" placeholder="total" id="total" name="total"
 											aria-label="total" aria-describedby="basic-addon1" value="">
 									</div>
 								
