@@ -100,19 +100,42 @@
 						<div class="pesan" style="display: none;"></div>
 						<table>
 							<tr>
-								<td width="240px" class="text-muted">Harga</td>
-								<td><input disabled class="form-control" name="harga" id="harga" type="text"
-										value="<?= $detail->harga?>">
+								<td width="200" class="text-muted">Harga</td>
+								<td>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Rp</span>
+										</div>
+										<input disabled type="text" class="form-control" placeholder="harga" id="harga" name="harga"
+											aria-label="harga" aria-describedby="basic-addon1"
+											value="<?= $detail->harga?>">
+									</div>
 								</td>
 							</tr>
 							<tr>
-								<td width="240px" class="text-muted">Diskon</td>
-								<td><input disabled class="form-control" name="diskon" id="diskon" type="text"
-										value="2000"></td>
+								<td width="" class="text-muted">Diskon</td>
+								<td>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Rp</span>
+										</div>
+										<input disabled type="text" class="form-control" placeholder="diskon" id="diskon" name="diskon"
+											aria-label="diskon" aria-describedby="basic-addon1" value="2000">
+									</div>
+								</td>
+
 							</tr>
 							<tr>
 								<td class="text-muted">Total Transfer</td>
-								<td><input disabled class="form-control" name="total" id="total" type="text" value="">
+								<td>
+								<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Rp</span>
+										</div>
+										<input disabled type="text" class="form-control" placeholder="total" id="total" name="total"
+											aria-label="total" aria-describedby="basic-addon1" value="">
+									</div>
+								
 								</td>
 
 							</tr>
@@ -161,14 +184,16 @@
 				</div>
 			</div>
 			<?php } else { ?>
-				<div class="col-lg-5">
+			<div class="col-lg-5">
 				<div class="card mb-4 border-0" style="box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);">
 					<div class="card-header">
 						<h5 class="fw-bolder mb-0 text-center">Informasi Penting</h5>
 					</div>
 					<div class="card-body">
 						<!-- info -->
-						<p>Selesaikan pembelajaran Anda di menu <a style="color: #e74c3c;" href="<?= base_url('pelatihan-aktif') ?>">Pelatihan Saya</a>  dan dapatkan sertifikat pelatihannya.</p>
+						<p>Selesaikan pembelajaran Anda di menu <a style="color: #e74c3c;"
+								href="<?= base_url('pelatihan-aktif') ?>">Pelatihan Saya</a> dan dapatkan sertifikat
+							pelatihannya.</p>
 					</div>
 				</div>
 			</div>
@@ -208,18 +233,43 @@
 						<div class="pesan" style="display: none;"></div>
 						<table>
 							<tr>
-								<td width="240px" class="text-muted">Harga</td>
-								<td><input class="form-control" name="harga" id="harga" type="text"
-										value="<?= $detail->harga?>">
+								<td width="200" class="text-muted">Harga</td>
+								<td>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Rp</span>
+										</div>
+										<input type="text" class="form-control" placeholder="harga" id="harga" name="harga"
+											aria-label="harga" aria-describedby="basic-addon1"
+											value="<?= $detail->harga?>">
+									</div>
 								</td>
 							</tr>
 							<tr>
-								<td width="240px" class="text-muted">Diskon</td>
-								<td><input class="form-control" name="diskon" id="diskon" type="text" value="2000"></td>
+								<td width="" class="text-muted">Diskon</td>
+								<td>
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Rp</span>
+										</div>
+										<input type="text" class="form-control" placeholder="diskon" id="diskon" name="diskon"
+											aria-label="diskon" aria-describedby="basic-addon1" value="2000">
+									</div>
+								</td>
+
 							</tr>
 							<tr>
 								<td class="text-muted">Total Transfer</td>
-								<td><input class="form-control" name="total" id="total" type="text" value=""></td>
+								<td>
+								<div class="input-group">
+										<div class="input-group-prepend">
+											<span class="input-group-text" id="basic-addon1">Rp</span>
+										</div>
+										<input type="text" class="form-control" placeholder="total" id="total" name="total"
+											aria-label="total" aria-describedby="basic-addon1" value="">
+									</div>
+								
+								</td>
 
 							</tr>
 							<tr>
