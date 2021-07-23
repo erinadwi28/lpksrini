@@ -2,7 +2,7 @@
     //    "use strict";
 
 
-    /*  Data Table
+    /*  Data Table 
     -------------*/
 
     $('#bootstrap-data-table').DataTable({

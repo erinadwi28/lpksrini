@@ -9,6 +9,7 @@
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets/frontend/dashboard') ?>/js/init-scripts/data-table/datatables-init.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/jszip/dist/jszip.min.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/pdfmake/build/pdfmake.min.js"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/vendors/pdfmake/build/vfs_fonts.js"></script>
@@ -21,6 +22,7 @@
 <script src="<?= base_url('assets/frontend/libraries/parsley/parsley.js') ?>"></script>
 <script src="<?= base_url('assets/frontend/dashboard') ?>/js/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <script src="<?= base_url('assets/backend/js') ?>/app.js"></script>
+<script src="<?= base_url('assets/frontend/dashboard/') ?>vendors/lightbox/dist/ekko-lightbox.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 <!-- Sweet alert -->
 
@@ -42,7 +44,6 @@
 
 <!-- tambah data dan hapus data -->
 <script>
-
 // Testimoni sweet
 (function($){
 const flashData = $('.flash-data').data('flashdata');
@@ -55,7 +56,6 @@ const flashData = $('.flash-data').data('flashdata');
 			type: 'success'
 						});
 	}
- 
 })(jQuery);
 	
 </script>

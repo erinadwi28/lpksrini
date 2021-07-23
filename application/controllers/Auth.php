@@ -41,7 +41,7 @@ class Auth extends CI_Controller {
         // pengguna ada
         if ($pengguna) {
             // pengguna aktif
-            if ($pengguna['status_aktif'] == 1){
+            if ($pengguna['status_aktif'] == 0){
                 // cek kata sandi
                 if (password_verify($kata_sandi, $pengguna['kata_sandi'])){
                     $data = [
@@ -52,7 +52,7 @@ class Auth extends CI_Controller {
 
                     $this->session->set_userdata($data);
                     if ($pengguna['id_level'] == 1) {
-                        redirect('Admin');
+                        redirect('dashboard-admin');
                     } elseif ($pengguna['id_level'] == 2){
                         redirect('dashboard');
                     }
@@ -115,7 +115,7 @@ class Auth extends CI_Controller {
                     'no_hp' => $this->input->post('no_hp', true),
                     'kartu' => '',
                     'id_level'=> 2,
-                    'status_aktif' => 1,
+                    'status_aktif' => 0,
                     'dibuat' => date("Y-m-d H:i:s")
                 ];
 

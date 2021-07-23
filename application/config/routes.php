@@ -53,7 +53,7 @@ $route['default_controller'] = 'beranda';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-// url
+// url member
 $route['dashboard'] = 'Member/index';
 $route['katalog'] = 'Member/katalog';
 $route['detail-katalog/(:num)'] = 'Member/detail_katalog/$1';
@@ -63,3 +63,16 @@ $route['kurikulum'] = 'Member/kurikulum';
 $route['kelas'] = 'Member/kelas';
 $route['sertifikat'] = 'Member/sertifikat';
 $route['detail-profil'] = 'Member/detail_profil';
+
+// url admin
+$route['dashboard-admin'] = 'Admin/index';
+$route['list-data-member'] = 'Admin/list_member';
+$route['detail-data-member/(:num)'] = 'Admin/detail_member/$1';
+$route['list-data-voucher'] = 'Admin/list_voucher';
+$route['list-transaksi-masuk'] = 'Admin/list_transaksi_masuk';
+$route['detail-transaksi-masuk/(:num)'] = 'Admin/detail_transaksi_masuk/$1';
+$route['list-transaksi-selesai'] = 'Admin/list_transaksi_selesai';
+$route['detail-transaksi-selesai/(:num)'] = 'Admin/detail_transaksi_selesai/$1';
+$route['list-data-pelatihan'] = 'Admin/list_program_pelatihan';
+$route['detail-program-pelatihan/(:num)'] = 'Admin/detail_pelatihan/$1';
+$route['detail-profil-admin'] = 'Admin/detail_profil_admin';

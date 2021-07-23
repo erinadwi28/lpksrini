@@ -5495,7 +5495,7 @@ aside.left-panel {
 	font-family: 'Fontawesome';
 	font-size: 16px;
 	position: absolute;
-	top: 10px;
+	top: 4px;
 	right: 0;
 	text-align: right;
 	-webkit-transition: all 0.25s ease;
@@ -7637,13 +7637,13 @@ header .form-inline .search-form.close {
 
 .gabung {
 	background-color: #FDAE5C;
-	color: #1F1F1F;
+	color: #ffff;
 	border: 0px;
 }
 
 .gabung:hover {
 	background-color: #ee9230;
-	color: #1F1F1F;
+	color: #ffff;
 	border: 0px;
 }
 
@@ -7744,6 +7744,11 @@ header .form-inline .search-form.close {
 	border: 0;
 }
 
+.btn-danger {
+	background: #dc3545;
+	color: #fff;
+	border: 0;
+}
 
 /* Topbar */
 .username {
@@ -7768,7 +7773,6 @@ textarea.testimoni {
     transition: width 0.6s ease;
 	height: 5px;
 }
-
 
 .kartu .card-box{
     position: relative;
@@ -7850,4 +7854,65 @@ textarea.testimoni {
 		padding: 0;
 		text-align: left;
 	}
+}
+
+.pelatihan .card-box{
+    position: relative;
+   
+    padding: 10px;
+	border-radius: 8px;
+	border: 0px;
+    background-color: #fff !important;
+}
+.pelatihan .card-box:hover {
+    text-decoration: none;
+    /* color: #fff; */
+}
+.pelatihan .card-box:hover .icon i {
+    font-size: 90px;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.pelatihan .card-box h5 {
+    font-size: 18px;
+    padding: 0 0 10px;
+    text-align: center;
+}
+
+.pelatihan .card-box .icon {
+    position: relative;
+    top: auto;
+    z-index: 0;
+    font-size: 72px;
+    /* color: rgba(0, 0, 0, 0.15); */
+}
+
+.icon-kurikulum {
+	color: #20a8d8;
+}
+
+.icon-materi {
+	color: #28a745;
+}
+
+.icon-kuis {
+	color: #ffc107;
+}
+
+.bg-header-modal {
+	background-color: #FDAE5C;
+	border: 0px;
+}
+
+.modal-content {
+	border: 0px;
+}
+
+.form-control::-webkit-input-placeholder{
+	font-size: 15px;
+}
+
+.col-form-label {
+	font-size: 15px;
 }

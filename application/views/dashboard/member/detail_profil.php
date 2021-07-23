@@ -2,7 +2,7 @@
 	<div class="col-sm-4">
 		<div class="page-header float-left">
 			<div class="page-title">
-				<h1>Profil</h1>
+				<h1>Profil Saya</h1>
 			</div>
 		</div>
 	</div>
@@ -10,7 +10,7 @@
 		<div class="page-header float-right">
 			<div class="page-title">
 				<ol class="breadcrumb text-right">
-					<li class="active text-muted">Profil</li>
+					<li class="active text-muted">Profil Saya</li>
 				</ol>
 			</div>
 		</div>
@@ -34,9 +34,11 @@
 
 					<div class="card-body">
 						<div class="mx-auto d-block">
+							<a href="<?= base_url('assets/backend/images/member/foto_profil/') . $pengguna['foto_profil']; ?>" data-gallery="mygallery" data-title="Foto Profil Member" data-toggle="lightbox">
 							<img class="rounded-circle mx-auto d-block"
 								src="<?= base_url('assets/backend/images/member/foto_profil/') . $pengguna['foto_profil']; ?>"
 								alt="Card image cap" width="180">
+						</a>
 							<h5 class="text-sm-center mt-2 mb-1"><b><?= $pengguna['nama']; ?></b></h5>
 
 							<div class="location text-sm-center"><i class="fa fa-credit-card"></i>

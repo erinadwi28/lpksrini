@@ -18,22 +18,22 @@ class M_member extends CI_Model {
 	public function get_testimoni()
 	{
 		$id = $this->session->userdata('id_pengguna'); // dapatkan id user yg login
-$this->db->select('*');
-$this->db->from('testimoni');
-$this->db->where('id_pengguna', $id);//
-$query = $this->db->get();
-return $query->result();
+        $this->db->select('*');
+        $this->db->from('testimoni');
+        $this->db->where('id_pengguna', $id);//
+        $query = $this->db->get();
+        return $query->result();
 	}
 
 	// get transaksi
 	public function get_data_transaksi($id)
 	{
-$this->db->select('*');
-$this->db->from('transaksi');
-$this->db->where('id_pelatihan', $id);
-$this->db->where('id_pengguna', $this->session->userdata('id_pengguna'));//
-$query = $this->db->get();
-return $query->result();
+        $this->db->select('*');
+        $this->db->from('transaksi');
+        $this->db->where('id_pelatihan', $id);
+        $this->db->where('id_pengguna', $this->session->userdata('id_pengguna'));//
+        $query = $this->db->get();
+        return $query->result();
 	}
 	
 	public function pengguna(){
