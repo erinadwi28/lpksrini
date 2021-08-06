@@ -526,4 +526,48 @@ class Admin extends CI_Controller {
 			echo "Anda tidak berhak mengakses halaman ini";
 		}
         }
+
+        // List Kurikulum
+        public function list_kurikulum($id_pelatihan){ 
+		if($this->session->userdata('id_level') =='1'){
+			$data['pengguna'] = $this->m_admin->pengguna();
+			$data_title['title'] = 'Detail Data Program Pelatihan';
+                        $data_kurikulum['kurikulum'] = $this->m_admin->get_kurikulum($id_pelatihan);
+                        $data_kurikulum['kurikulum_join'] = $this->m_admin->get_kurikulum_join($id_pelatihan);
+
+
+			$this->load->view('dashboard/header/header', $data_title);
+			$this->load->view('dashboard/admin/index',$data);
+			$this->load->view('dashboard/admin/list_kurikulum',$data_kurikulum);
+			$this->load->view('dashboard/footer/footer');
+		} else{
+			echo "Anda tidak berhak mengakses halaman ini";
+		}
+	}
+
+        // Aksi ubah data kurikulum
+        public function aksi_ubah_kurikulum(){   
+        if($this->session->userdata('id_level') =='1'){
+        
+        if($this->input->is_ajax_request()==true){
+
+                $id=$this->input->post('id_kurikulum', true);
+                $unit_kompetensi=$this->input->post('unit_kompetensi', true);
+                $elemen_kompetensi=$this->input->post('elemen_kompetensi', true);
+                $bobot=$this->input->post('bobot', true);
+                
+                $this->m_admin->update_kurikulum($id,$unit_kompetensi, $elemen_kompetensi, $bobot);
+
+                $msg = [
+                        'sukses' => 'Kurikulum telah diubah'
+                ];
+                echo json_encode($msg);
+        } else {
+                echo "tidak ada request";
+        }
+	
+        } else{
+                echo "Anda tidak berhak mengakses halaman ini";
+        }
+        }
 }

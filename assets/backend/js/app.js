@@ -264,11 +264,11 @@
 	// Hapus / Nonaktifkan voucher
 	$('.btn_hapus_voucher').click(function () {
 		$id = $(this).parents("tr").attr("id");
-		$kode = $(this).parents("tr").attr( "data-id" );
+		$kode = $(this).parents("tr").attr("data-id");
 
 		Swal.fire({
 			title: 'Hapus Voucher',
-			text: "Apakah anda yakin ingin menghapus voucher dengan kode "+$kode+" ?",
+			text: "Apakah anda yakin ingin menghapus voucher dengan kode " + $kode + " ?",
 			icon: 'warning',
 			showCancelButton: true,
 			confirmButtonColor: '#3085d6',
@@ -304,7 +304,7 @@
 			}
 		});
 	});
-	
+
 
 	// Update member data (admin)
 	$('.ubah_data_member').submit(function (e) {
@@ -338,7 +338,7 @@
 
 	// Setujui transaksi
 	$('.btn_acc_transaksi').click(function () {
-		$id_transaksi = document.getElementById("id_transaksi_acc").value ;
+		$id_transaksi = document.getElementById("id_transaksi_acc").value;
 
 		Swal.fire({
 			title: 'Setujui',
@@ -410,9 +410,41 @@
 	});
 
 	// Lightbox
-	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-    });
+	$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	});
+
+	// Update kurikulum
+	$('.ubah_kurikulum').submit(function (e) {
+		$.ajax({
+			type: 'POST',
+			url: $(this).attr('action'),
+			data: $(this).serialize(),
+			dataType: 'json',
+			success: function (response) {
+				if (response.error) {
+					$('.pesan').html(response.error).show();
+				}
+				if (response.sukses) {
+					Swal.fire({
+						icon: 'success',
+						title: 'Berhasil',
+						showConfirmButton: true,
+						text: response.sukses,
+					})
+					$('.ubah_data_kurikulum').modal('hide');
+					setTimeout(() => {
+						window.location.reload();
+					}, 1000);
+				}
+			},
+			error: function (xhr, ajaxOptions, thrownError) {
+				alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+			}
+		})
+		return false;
+	});
+
 
 })(jQuery);

@@ -213,6 +213,36 @@ class M_admin extends CI_Model {
         return $query;
         }
 
+        // get detail kurikulum
+	public function get_kurikulum($id_pelatihan)
+	{
+        $this->db->select('*');
+        $this->db->from('kurikulum');
+        $this->db->where('status_delete', 0);
+        $this->db->where('id_pelatihan', $id_pelatihan);
+        $query = $this->db->get();
+        return $query->result();
+	}
+
+        // get detail kurikulum
+	public function get_kurikulum_join($id_pelatihan)
+	{
+        $this->db->select('kurikulum.id_pelatihan, program_pelatihan.nama_pelatihan, program_pelatihan.jumlah_kurikulum');
+        $this->db->from('kurikulum');
+        $this->db->join('program_pelatihan', 'kurikulum.id_pelatihan = program_pelatihan.id_pelatihan', 'INNER');
+        $this->db->where('kurikulum.status_delete', 0);
+        $this->db->where('kurikulum.id_pelatihan', $id_pelatihan);
+        $this->db->group_by('kurikulum.id_pelatihan');
+        $query = $this->db->get();
+        return $query->result();
+	}
+
+        // update kurikulum
+	public function update_kurikulum($id,$unit_kompetensi, $elemen_kompetensi, $bobot){
+        $query=$this->db->query("UPDATE kurikulum SET unit_kompetensi='$unit_kompetensi',elemen_kompetensi='$elemen_kompetensi',bobot='$bobot' WHERE id_kurikulum='$id'");
+        return $query;
+        }
+
     //get list data permohonan yang belum dibaca
 //     public function get_permohonan_belum_dibaca($id_fo)
 //     {

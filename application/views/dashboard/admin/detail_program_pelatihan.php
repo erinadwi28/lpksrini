@@ -32,7 +32,8 @@
 	<div class="main-body">
 		<div class="row mb-4 py-3">
 			<div class="col-lg-8">
-				<form id="ubah_detail_pelatihan" class="ubah_detail_pelatihan" method="POST" action="<?= base_url('admin/aksi_ubah_pelatihan/') ?><?= $detail->id_pelatihan; ?>">
+				<form id="ubah_detail_pelatihan" class="ubah_detail_pelatihan" method="POST"
+					action="<?= base_url('admin/aksi_ubah_pelatihan/') ?><?= $detail->id_pelatihan; ?>">
 					<div class="row mb-3">
 						<div class="col-sm-3">
 							<h6 class="mb-0">Nama Pelatihan</h6>
@@ -84,25 +85,26 @@
 
 						<div class="mx-auto d-block">
 							<?php if ($detail->gambar_pelatihan != "placeholder.png") { ?>
-								<a href="<?= base_url('assets/frontend/images/landing/courses/') . $detail->gambar_pelatihan; ?>"
+							<a href="<?= base_url('assets/frontend/images/landing/courses/') . $detail->gambar_pelatihan; ?>"
 								data-gallery="mygallery" data-title="Foto Profil Saya" data-toggle="lightbox">
 								<img class="mx-auto d-block"
 									src="<?= base_url('assets/frontend/images/landing/courses/') . $detail->gambar_pelatihan; ?>"
 									alt="Cover Pelatihan" width="200">
-								</a>
+							</a>
 							<?php } else { ?>
-								<a href="<?= base_url('assets/frontend/images/landing/courses/') . $detail->gambar_pelatihan; ?>"
+							<a href="<?= base_url('assets/frontend/images/landing/courses/') . $detail->gambar_pelatihan; ?>"
 								data-gallery="mygallery" data-title="Foto Profil Saya" data-toggle="lightbox">
 								<img class="rounded-circle mx-auto d-block"
 									src="<?= base_url('assets/frontend/images/landing/courses/') . $detail->gambar_pelatihan; ?>"
 									alt="Cover Pelatihan" width="200">
-								</a>
+							</a>
 							<?php } ?>
 						</div>
 						<hr>
 						<div class="card-text">
-							<form action="<?= base_url('admin/upload_cover_pelatihan/') ?><?= $detail->id_pelatihan; ?>" enctype="multipart/form-data"
-								method="post" accept-charset="utf-8" id="form_upload_foto_profil">
+							<form action="<?= base_url('admin/upload_cover_pelatihan/') ?><?= $detail->id_pelatihan; ?>"
+								enctype="multipart/form-data" method="post" accept-charset="utf-8"
+								id="form_upload_foto_profil">
 								<div class="input-group">
 									<div class="custom-file">
 										<label class="custom-file-label" for="file-upload">Pilih file foto...</label>
@@ -130,10 +132,10 @@
 							<h5 class="icon-kurikulum"> Kurikulum </h5>
 						</div>
 						<div class="icon">
-							<a href="">
+							<a href="<?= base_url('kurikulum/') ?><?= $detail->id_pelatihan; ?>">
 								<i class="fa fa-file-text-o icon-kurikulum"></i>
 							</a>
-							
+
 						</div>
 					</div>
 				</div>
