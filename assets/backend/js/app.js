@@ -446,5 +446,66 @@
 		return false;
 	});
 
+	// Insert Materi
+	$('.simpan_materi').submit(function (e) {
+		$.ajax({
+			type: 'POST',
+			url: $(this).attr('action'),
+			data: $(this).serialize(),
+			dataType: 'json',
+			success: function (response) {
+				if (response.error) {
+					$('.pesan').html(response.error).show();
+				}
+				if (response.sukses) {
+					Swal.fire({
+						icon: 'success',
+						title: 'Berhasil',
+						showConfirmButton: true,
+						text: response.sukses,
+					})
+					$('#modaltambah').modal('hide');
+					setTimeout(() => {
+						window.location.reload();
+					}, 1000);
+				}
+			},
+			error: function (xhr, ajaxOptions, thrownError) {
+				alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+			}
+		})
+		return false;
+	});
+
+	// Update materi
+	$('.ubah_materi').submit(function (e) {
+		$.ajax({
+			type: 'POST',
+			url: $(this).attr('action'),
+			data: $(this).serialize(),
+			dataType: 'json',
+			success: function (response) {
+				if (response.error) {
+					$('.pesan').html(response.error).show();
+				}
+				if (response.sukses) {
+					Swal.fire({
+						icon: 'success',
+						title: 'Berhasil',
+						showConfirmButton: true,
+						text: response.sukses,
+					})
+					$('.ubah_data_materi').modal('hide');
+					setTimeout(() => {
+						window.location.reload();
+					}, 1000);
+				}
+			},
+			error: function (xhr, ajaxOptions, thrownError) {
+				alert(xhr.status + "\n" + xhr.responseText + "\n" + thrownError);
+			}
+		})
+		return false;
+	});
 
 })(jQuery);

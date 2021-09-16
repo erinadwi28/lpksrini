@@ -122,7 +122,7 @@ class M_admin extends CI_Model {
         return $query->result();
 	}
 
-         // aksi tambah data ke tabel voucher
+        // aksi tambah data ke tabel voucher
 	public function insert_voucher($data)
 	{
 		$this->db->insert('voucher', $data);
@@ -207,7 +207,7 @@ class M_admin extends CI_Model {
         return $query->result();
 	}
 
-        // update member
+        // update pelatihan
 	public function update_pelatihan($id_pelatihan,$nama_pelatihan, $harga, $jumlah_kurikulum, $deskripsi){
         $query=$this->db->query("UPDATE program_pelatihan SET nama_pelatihan='$nama_pelatihan',harga='$harga',jumlah_kurikulum='$jumlah_kurikulum', deskripsi='$deskripsi' WHERE id_pelatihan='$id_pelatihan'");
         return $query;
@@ -243,6 +243,41 @@ class M_admin extends CI_Model {
         return $query;
         }
 
+        // get detail kurikulum
+	public function get_unit_kompetensi($id_kurikulum)
+	{
+        $this->db->select('*');
+        $this->db->from('kurikulum');
+        $this->db->where('status_delete', 0);
+        $this->db->where('id_kurikulum', $id_kurikulum);
+        $query = $this->db->get();
+        return $query->result();
+	}
+
+        // get materi
+	public function get_materi($id_kurikulum)
+	{
+        $this->db->select('materi.*');
+        $this->db->from('materi');
+        $this->db->join('kurikulum', 'kurikulum.id_kurikulum = materi.id_kurikulum', 'INNER');
+        $this->db->where('kurikulum.status_delete', 0);
+        $this->db->where('materi.id_kurikulum', $id_kurikulum);
+        // $this->db->group_by('materi.id_kurikulum');
+        $query = $this->db->get();
+        return $query->result();
+	}
+
+        // aksi tambah data ke tabel materi
+	public function insert_materi($data)
+	{
+		$this->db->insert('materi', $data);
+	}
+
+        // update materi
+	public function update_materi($id,$nama_materi, $jenis_materi, $link_materi){
+        $query=$this->db->query("UPDATE materi SET nama_materi='$nama_materi',jenis_materi='$jenis_materi',link_materi='$link_materi' WHERE id_materi='$id'");
+        return $query;
+        }
     //get list data permohonan yang belum dibaca
 //     public function get_permohonan_belum_dibaca($id_fo)
 //     {

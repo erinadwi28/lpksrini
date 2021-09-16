@@ -19,7 +19,7 @@
 </div>
 
 <div class="progress">
-	<div class="progress-bar" role="progressbar" style="width:10%; height:10px;" aria-valuenow="50" aria-valuemin="0"
+	<div class="progress-bar" role="progressbar" style="width:15%; height:15px;" aria-valuenow="35" aria-valuemin="0"
 		aria-valuemax="100"></div>
 </div>
 
@@ -135,7 +135,6 @@
 							<a href="<?= base_url('kurikulum/') ?><?= $detail->id_pelatihan; ?>">
 								<i class="fa fa-file-text-o icon-kurikulum"></i>
 							</a>
-
 						</div>
 					</div>
 				</div>
@@ -147,7 +146,7 @@
 							<h5 class="icon-materi"> Materi </h5>
 						</div>
 						<div class="icon">
-							<a href="">
+							<a href="<?= base_url('unit-kompetensi/') ?><?= $detail->id_pelatihan; ?>">
 								<i class="fa fa-book icon-materi"></i>
 							</a>
 						</div>

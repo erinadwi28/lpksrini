@@ -570,4 +570,93 @@ class Admin extends CI_Controller {
                 echo "Anda tidak berhak mengakses halaman ini";
         }
         }
+
+        // List Kurikulum
+        public function list_kurikulum_materi($id_pelatihan){ 
+		if($this->session->userdata('id_level') =='1'){
+			$data['pengguna'] = $this->m_admin->pengguna();
+			$data_title['title'] = 'Pilih Unit Kompetensi';
+                        $data_kurikulum['kurikulum'] = $this->m_admin->get_kurikulum($id_pelatihan);
+                        $data_kurikulum['kurikulum_join'] = $this->m_admin->get_kurikulum_join($id_pelatihan);
+
+
+			$this->load->view('dashboard/header/header', $data_title);
+			$this->load->view('dashboard/admin/index',$data);
+			$this->load->view('dashboard/admin/list_kurikulum_materi',$data_kurikulum);
+			$this->load->view('dashboard/footer/footer');
+		} else{
+			echo "Anda tidak berhak mengakses halaman ini";
+		}
+	}
+
+        // List Materi
+        public function list_materi($id_pelatihan,$id_kurikulum){ 
+		if($this->session->userdata('id_level') =='1'){
+			$data_pengguna['pengguna'] = $this->m_admin->pengguna();
+			$data_title['title'] = 'Masukkan Data Materi';
+                        $data['kurikulum'] = $this->m_admin->get_unit_kompetensi($id_kurikulum);
+                        $data['kurikulum_join'] = $this->m_admin->get_kurikulum_join($id_pelatihan);
+                        $data['materi'] = $this->m_admin->get_materi($id_kurikulum);
+
+			$this->load->view('dashboard/header/header', $data_title);
+			$this->load->view('dashboard/admin/index',$data_pengguna);
+			$this->load->view('dashboard/admin/list_materi',$data);
+			$this->load->view('dashboard/footer/footer');
+		} else{
+			echo "Anda tidak berhak mengakses halaman ini";
+		}
+	}
+
+        // Aksi tambah data materi
+        public function aksi_tambah_materi(){   
+        if($this->session->userdata('id_level') =='1'){
+        
+       if($this->input->is_ajax_request()==true){
+                
+                $data = array(
+                        'id_kurikulum' => $this->input->post('id_kurikulum', true),
+                        'nama_materi' => $this->input->post('nama_materi', true),
+                        'jenis_materi' => $this->input->post('jenis_materi', true),
+                        'link_materi' => $this->input->post('link_materi', true)
+                );
+                $this->m_admin->insert_materi($data);
+
+                $msg = [
+                        'sukses' => 'Materi telah ditambahkan'
+                ];
+                echo json_encode($msg);
+        } else {
+                echo "tidak ada request";
+        }
+	
+        } else{
+                echo "Anda tidak berhak mengakses halaman ini";
+        }
+        }
+
+        // Aksi ubah data kurikulum
+        public function aksi_ubah_materi(){   
+        if($this->session->userdata('id_level') =='1'){
+        
+        if($this->input->is_ajax_request()==true){
+
+                $id=$this->input->post('id_materi', true);
+                $nama_materi=$this->input->post('nama_materi', true);
+                $jenis_materi=$this->input->post('jenis_materi', true);
+                $link_materi=$this->input->post('link_materi', true);
+                
+                $this->m_admin->update_materi($id,$nama_materi, $jenis_materi, $link_materi);
+
+                $msg = [
+                        'sukses' => 'Materi telah diubah'
+                ];
+                echo json_encode($msg);
+        } else {
+                echo "tidak ada request";
+        }
+	
+        } else{
+                echo "Anda tidak berhak mengakses halaman ini";
+        }
+        }
 }

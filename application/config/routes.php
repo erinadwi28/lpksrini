@@ -76,4 +76,7 @@ $route['detail-transaksi-selesai/(:num)'] = 'Admin/detail_transaksi_selesai/$1';
 $route['list-data-pelatihan'] = 'Admin/list_program_pelatihan';
 $route['detail-program-pelatihan/(:num)'] = 'Admin/detail_pelatihan/$1';
 $route['kurikulum/(:num)'] = 'Admin/list_kurikulum/$1';
+$route['unit-kompetensi/(:num)'] = 'Admin/list_kurikulum_materi/$1';
 $route['detail-profil-admin'] = 'Admin/detail_profil_admin';
+$route['input-data-materi/(:num)/(:any)'] = 'Admin/list_materi/$1/$2';
+

@@ -28,7 +28,7 @@
 </div>
 
 <div class="progress">
-	<div class="progress-bar" role="progressbar" style="width:15%; height:15px;" aria-valuenow="75" aria-valuemin="0"
+	<div class="progress-bar" role="progressbar" style="width:25%; height:25px;" aria-valuenow="45" aria-valuemin="0"
 		aria-valuemax="100"></div>
 </div>
 
@@ -91,7 +91,54 @@
 	</div>
 </div>
 <!-- End -->
+</div>
 
+<!-- Modal Add -->
+<div class="modal fade mt-3 p-5" id="modaltambah" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header bg-header-modal">
+				<h5 class="modal-title" id="mediumModalLabel">Tambah Data Kurikulum</h5>
+				<button type="button" class="close close-form" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<?= form_open('admin/aksi_tambah_kurikulum', ['class' => 'simpan_kurikulum', 'id' => 'simpan']) ?>
+			<div class="pesan" style="display: none;"></div>
+			<div class="modal-body">
+					<div class="form-group row">
+						<label for="unit_kompetensi" class="col-sm-4 col-form-label">Unit Kompetensi</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="unit_kompetensi"
+								name="unit_kompetensi" value=""
+								placeholder="masukkan unit kompetensi disini..." required>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="elemen_kompetensi" class="col-sm-4 col-form-label">Elemen Kompetensi</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="elemen_kompetensi"
+								id="elemen_kompetensi" cols="30" rows="4"
+								placeholder="masukkan elemen kompetensi disini..."
+								required></textarea>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="bobot" class="col-sm-4 col-form-label">Bobot/Jam Pelajaran @60 menit</label>
+						<div class="col-sm-8">
+							<input type="text" class="form-control" id="bobot"
+								name="bobot" value="" placeholder="masukkan bobot disini..."
+								required>
+						</div>
+					</div>
+				</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-sm btn-success"><i class="fa fa-save"></i> Simpan</button>
+			</div>
+			<?= form_close() ?>
+		</div>
+	</div>
 </div>
 
 <!-- Modal Ubah -->
@@ -126,7 +173,6 @@
 								id="elemen_kompetensi_ubah<?= $list->id_kurikulum; ?>" cols="30" rows="4"
 								placeholder="masukkan elemen kompetensi disini..."
 								required=""><?= $list->elemen_kompetensi; ?></textarea>
-
 						</div>
 					</div>
 					<div class="form-group row">
